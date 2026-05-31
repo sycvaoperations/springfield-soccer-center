@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Springfield Soccer Center — Tablet Preview</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background:
+      radial-gradient(120% 80% at 50% -10%, #12243a 0%, transparent 55%),
+      #070c14;
+    font-family: -apple-system, "Plus Jakarta Sans", system-ui, sans-serif;
+    color: #cdd6e3;
+    overflow: hidden;
+  }
+  .stage {
+    position: fixed; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 22px;
+  }
+  .caption { text-align: center; user-select: none; }
+  .caption .eyebrow {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #5d6e84; font-weight: 700; margin: 0 0 6px;
+  }
+  .caption .label { font-size: 15px; font-weight: 600; color: #e8edf4; margin: 0; }
+  .caption .label span { color: #5d6e84; font-weight: 500; }
+  .tablet-scaler { transform-origin: center center; }
+
+  /* iPad-style bezel — uniform thin frame, single front camera, no home button */
+  .ipad {
+    position: relative;
+    border-radius: 38px;
+    background: #0b0d10;
+    padding: 18px;
+    box-shadow:
+      0 40px 90px rgba(0,0,0,0.45),
+      0 0 0 2px #23262b,
+      inset 0 0 0 1px rgba(255,255,255,0.04);
+  }
+  .ipad .cam {
+    position: absolute; top: 9px; left: 50%; transform: translateX(-50%);
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #15181d; box-shadow: inset 0 0 0 1.5px #2b2f36;
+    z-index: 5;
+  }
+  .ipad .screen {
+    position: relative;
+    border-radius: 22px; overflow: hidden;
+    background: #0a1422;
+  }
+  .ipad iframe { width: 100%; height: 100%; border: 0; display: block; background: #0a1422; }
+  .hint {
+    position: fixed; bottom: 18px; left: 0; right: 0; text-align: center;
+    font-size: 12px; color: #4a596e; letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel">
+const { useState, useEffect } = React;
+const SCREEN_W = 834, SCREEN_H = 1112; // iPad Air portrait — hits the tablet breakpoint
+
+function TabletPreview() {
+  const [scale, setScale] = useState(1);
+  useEffect(() => {
+    const fit = () => {
+      const frame = 36; // bezel padding both sides
+      const padX = 40, padY = 130;
+      const fw = SCREEN_W + frame, fh = SCREEN_H + frame;
+      const s = Math.min(1, (window.innerWidth - padX * 2) / fw, (window.innerHeight - padY) / fh);
+      setScale(Math.max(0.3, s));
+    };
+    fit();
+    window.addEventListener('resize', fit);
+    return () => window.removeEventListener('resize', fit);
+  }, []);
+
+  return (
+    <div className="stage">
+      <div className="caption">
+        <p className="eyebrow">Tablet Preview</p>
+        <p className="label">Springfield Soccer Center <span>· iPad · live &amp; scrollable</span></p>
+      </div>
+      <div className="tablet-scaler" style={{ transform: `scale(${scale})` }}>
+        <div className="ipad">
+          <div className="cam"></div>
+          <div className="screen" style={{ width: SCREEN_W, height: SCREEN_H }}>
+            <iframe
+              src="index.html"
+              title="Springfield Soccer Center tablet view"
+              onLoad={(e) => {
+                try { e.target.contentDocument.body.classList.add('nomotion'); } catch (_) {}
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="hint">Scroll inside the tablet to explore · this is your real site at tablet width</div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<TabletPreview />);
+</script>
+</body>
+</html>
