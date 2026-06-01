@@ -1,11 +1,15 @@
 {
   "id": "summer-camps",
-  "title": "Full-Day Summer Camps",
+  "title": "Summer Camps",
   "cat": "Camp",
   "age": "U5–U19",
   "banner": "assets/banners/summer-camps.png",
   "desc": "Our flagship all-day experience packed with technical training, small-sided games, competitions, and fun—designed to keep players improving all summer long.",
-  "meta": ["6 Weeks", "Mon – Fri", "8:00 AM – 3:30 PM"],
+  "meta": [
+    "6 Weeks",
+    "Mon – Fri",
+    "8:00 AM – 3:30 PM"
+  ],
   "status": "open",
   "visible": true,
   "featured": true,
