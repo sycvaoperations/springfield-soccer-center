@@ -1,8 +1,4 @@
-﻿# Springfield Soccer Center — Build Program Catalog
-# Combines individual JSON files from content/programs/
-# into the single content/programs.json file used by the website.
-
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 $InputDir = "content/programs"
 $OutputFile = "content/programs.json"

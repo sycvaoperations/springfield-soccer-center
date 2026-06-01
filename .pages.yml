@@ -30,12 +30,13 @@ content:
         - title
     fields:
       - name: id
-        label: Program ID
+        label: "LOCKED: Program ID - do not edit"
         type: string
         required: true
         pattern:
           regex: "^[a-z0-9-]+$"
           message: "Use lowercase letters, numbers, and hyphens only."
+        description: "DO NOT CHANGE. This is the permanent website key. Change the Program Name field instead."
 
       - name: title
         label: Program Name
