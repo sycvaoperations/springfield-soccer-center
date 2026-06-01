@@ -1,235 +1,235 @@
-{
-  "programs": [
-    {
-      "id": "summer-camps",
-      "title": "Full-Day Summer Camps",
-      "cat": "Camp",
-      "age": "U5–U19",
-      "banner": "assets/banners/summer-camps.png",
-      "desc": "Our flagship all-day experience packed with technical training, small-sided games, competitions, and fun—designed to keep players improving all summer long.",
-      "meta": [
-        "6 Weeks",
-        "Mon – Fri",
-        "8:00 AM – 3:30 PM"
-      ],
-      "status": "open",
-      "visible": true,
-      "featured": true,
-      "order": 1,
-      "details": {
-        "tagline": "Six Weeks. Maximum Development.",
-        "body": "Our flagship summer experience — a full day of elite soccer development in an energetic, competitive environment.\n\n## Daily Structure\n\n- Morning technical training sessions\n- Small-sided games and possession work\n- Afternoon competitions and scrimmages\n- Themed days and player challenges\n\n## Who Is This For?\n\nPlayers of all levels from U5 through U19. Groups are organized by age and ability to maximize the training environment."
-      }
-    },
-    {
-      "id": "omid",
-      "title": "Pro Development Program",
-      "cat": "Pro Development",
-      "age": "U5–U19",
-      "banner": "assets/banners/omid.png",
-      "desc": "High-level, fast-paced training directed by Omid Namazi — technical mastery, tactical themes, and game-realistic reps in a professional environment.",
-      "meta": [
-        "8 Weeks",
-        "Tue & Wed",
-        "4:30 – 6:45 PM"
-      ],
-      "status": "open",
-      "visible": true,
-      "featured": true,
-      "order": 2,
-      "details": {
-        "kicker": "Pro Development Program · Omid Namazi",
-        "tagline": "Train Like a Pro. Think Like a Pro. Become Your Best.",
-        "bannerPlaceholder": "Drop a banner photo — Coach Omid / pro training session",
-        "facts": [
-          {
-            "label": "Format",
-            "value": "8-Week Pro Development Clinic"
-          },
-          {
-            "label": "Season",
-            "value": "Summer 2026"
-          },
-          {
-            "label": "Schedule",
-            "value": "Tue & Wed · 4:30–6:45 PM"
-          },
-          {
-            "label": "Age Groups",
-            "value": "U5–U19"
-          },
-          {
-            "label": "Director",
-            "value": "Omid Namazi"
-          },
-          {
-            "label": "License",
-            "value": "US Soccer Pro License"
-          }
-        ],
-        "body": "Join us this summer to train with one of the most experienced and respected coaches in the game through the Pro Development Program, personally directed and conducted by Omid Namazi — a US Soccer Pro License holder with experience at the professional, national team, and elite youth levels.\n\n## Coaching Pedigree\n\nCoach Namazi brings a wealth of high-level coaching experience, including serving as:\n\n- Current Head Coach of DC Power FC\n- Former coach with Hartford Athletic\n- Former coach with Houston Dynamo\n- Former US Youth National Team coach\n- Former assistant coach for the Iran national football team\n- Former Head Coach of Chicago Stars FC\n\nThis 8-week development clinic is designed to help players improve technically, tactically, and mentally in a high-energy professional training environment."
-      }
-    },
-    {
-      "id": "little-boots",
-      "title": "Little Boots",
-      "cat": "Foundations",
-      "age": "U3–U4",
-      "banner": "assets/banners/little-boots.png",
-      "desc": "First touches, big smiles. A playful introduction to the ball that builds coordination and a love of the game.",
-      "meta": [
-        "6 Weeks",
-        "Saturday Mornings",
-        "Parent & Player"
-      ],
-      "status": "open",
-      "visible": true,
-      "featured": true,
-      "order": 3,
-      "details": {
-        "tagline": "Their First Touch. Their First Love.",
-        "body": "The perfect first soccer experience for your youngest player. Little Boots is built around play, movement, and fun.\n\n## What to Expect\n\n- Ball familiarity and basic motor skills\n- Age-appropriate games and activities\n- Positive coaching in a fun environment\n- Building confidence through movement"
-      }
-    },
-    {
-      "id": "footskills",
-      "title": "Footskills",
-      "cat": "Ball Mastery",
-      "age": "U9–U14",
-      "banner": "assets/banners/footskills.png",
-      "desc": "Master the fundamentals of control and dribbling through high-repetition, ball-mastery training built for real-game confidence.",
-      "meta": [
-        "8 Weeks",
-        "Once a Week"
-      ],
-      "status": "open",
-      "visible": true,
-      "featured": true,
-      "order": 4,
-      "details": {
-        "tagline": "Master the Ball. Elevate Your Game.",
-        "body": "A foundational technical program for players who want to significantly improve their ball mastery and confidence.\n\n## What We Train\n\n- Ball mastery sequences and patterns\n- Dribbling moves and 1v1 technique\n- Turning, receiving, and body shape\n- Confidence in tight spaces"
-      }
-    },
-    {
-      "id": "pre-travel",
-      "title": "Pre-Travel",
-      "cat": "Pathway",
-      "age": "U5–U8",
-      "banner": "assets/banners/pre-travel.png",
-      "desc": "The bridge to competitive play. Build the foundation, confidence, and habits to step into travel soccer ready.",
-      "meta": [
-        "8 Weeks",
-        "Once a Week"
-      ],
-      "status": "open",
-      "visible": true,
-      "featured": false,
-      "order": 5,
-      "details": {
-        "tagline": "From Recreation to Competition.",
-        "body": "The ideal stepping stone for players ready to make the transition from recreational to competitive soccer.\n\n## Key Focus Areas\n\n- Technical foundation — first touch, passing, dribbling\n- Introduction to team shape and positioning\n- Competitive mindset development\n- Small-sided game application"
-      }
-    },
-    {
-      "id": "futsal",
-      "title": "Futsal Clinic",
-      "cat": "Small-Sided",
-      "age": "U5–U14",
-      "banner": "assets/banners/futsal.png",
-      "desc": "Fast feet, tight spaces, sharper decisions. The small-sided game that forges close control and quick thinking.",
-      "meta": [
-        "6 Weeks",
-        "Friday Nights"
-      ],
-      "status": "coming-soon",
-      "visible": true,
-      "featured": false,
-      "order": 6,
-      "details": {
-        "tagline": "Small Space. Big Development.",
-        "body": "Futsal is one of the most effective technical development tools in the game. Fast, tight, and demanding — every touch counts.\n\n## Why Futsal?\n\n- Up to 6x more touches per session vs. outdoor soccer\n- Forces quick decision-making under pressure\n- Builds creativity and close control\n- Used by elite programs worldwide"
-      }
-    },
-    {
-      "id": "gk-brian",
-      "title": "Goalkeeper Clinics with Brian",
-      "cat": "Goalkeeping",
-      "age": "U9–U14",
-      "banner": "assets/banners/goalkeeper.png",
-      "desc": "Elite goalkeeper training covering shot-stopping, positioning, distribution, and game scenarios—led by DC Power US National team coach Brian.",
-      "meta": [
-        "4 Weeks",
-        "Twice a Week"
-      ],
-      "status": "waitlist",
-      "visible": true,
-      "featured": false,
-      "order": 7,
-      "details": {
-        "tagline": "Elite Hands. Elite Feet. Elite Mind.",
-        "body": "Position-specific goalkeeper training led by an elite-level coaching staff. Built for goalkeepers who are serious about their craft.\n\n## Technical Curriculum\n\n- Shot-stopping mechanics and footwork\n- Distribution — kicks, throws, and short passing\n- Positioning and angles\n- High ball and cross handling\n- Game scenario decision-making"
-      }
-    },
-    {
-      "id": "scoring",
-      "title": "Art of Scoring Goals",
-      "cat": "Finishing",
-      "age": "U9–U14",
-      "banner": "assets/banners/scoring.png",
-      "desc": "Finishing, movement, and the instinct to be in the right place. Turn chances into goals under pressure.",
-      "meta": [
-        "5 Weeks",
-        "Once a Week"
-      ],
-      "status": "open",
-      "visible": true,
-      "featured": false,
-      "order": 8,
-      "details": {
-        "tagline": "Clinical. Creative. Relentless.",
-        "body": "Goals win games. This clinic is dedicated entirely to the craft of finishing — the movement, the composure, the creativity.\n\n## What You Will Work On\n\n- Off-ball movement and attacking runs\n- Composure and technique under pressure\n- First-time finishing — volleys, headers, rebounds\n- Clinical 1v1 situations\n- Pattern play leading to goal"
-      }
-    },
-    {
-      "id": "attacking-1v1",
-      "title": "1v1 Attacking",
-      "cat": "Dribbling",
-      "age": "U9–U14",
-      "banner": "assets/banners/attacking-1v1.png",
-      "desc": "Beat your defender, own the moment. Develop the moves, speed, and bravery to take players on and win.",
-      "meta": [
-        "5 Weeks",
-        "Once a Week"
-      ],
-      "status": "open",
-      "visible": true,
-      "featured": false,
-      "order": 9,
-      "details": {
-        "tagline": "Beat Your Defender. Every Time.",
-        "body": "The ability to beat a defender in a 1v1 is one of the most valuable skills in soccer. This clinic is entirely dedicated to that art.\n\n## Training Focus\n\n- Explosive first step and change of direction\n- Dribbling moves — cuts, step-overs, feints\n- Body shape and deception\n- Confidence under pressure\n- Game-realistic 1v1 scenarios"
-      }
-    },
-    {
-      "id": "first-touch",
-      "title": "First Touch & Passing",
-      "cat": "Technical",
-      "age": "U9–U14",
-      "banner": "assets/banners/first-touch.png",
-      "desc": "Clean control and sharp distribution. Refine the two touches every great player relies on, every single game.",
-      "meta": [
-        "6 Weeks",
-        "Once a Week"
-      ],
-      "status": "open",
-      "visible": true,
-      "featured": false,
-      "order": 10,
-      "details": {
-        "tagline": "Touch. Pass. Think. Faster.",
-        "body": "Everything in soccer starts with your first touch. This clinic builds the technical foundation that sets elite players apart.\n\n## Technical Curriculum\n\n- Clean first touch in all directions\n- Short and medium range passing\n- Combination play and wall passes\n- Speed of play under pressure\n- Receiving with body turned"
-      }
-    }
-  ]
+﻿{
+    "programs":  [
+                     {
+                         "id":  "summer-camps",
+                         "title":  "Full-Day Summer Camps",
+                         "cat":  "Camp",
+                         "age":  "U5â€“U19",
+                         "banner":  "assets/banners/summer-camps.png",
+                         "desc":  "Our flagship all-day experience packed with technical training, small-sided games, competitions, and funâ€”designed to keep players improving all summer long.",
+                         "meta":  [
+                                      "6 Weeks",
+                                      "Mon â€“ Fri",
+                                      "8:00 AM â€“ 3:30 PM"
+                                  ],
+                         "status":  "open",
+                         "visible":  true,
+                         "featured":  true,
+                         "order":  1,
+                         "details":  {
+                                         "tagline":  "Six Weeks. Maximum Development.",
+                                         "body":  "Our flagship summer experience â€” a full day of elite soccer development in an energetic, competitive environment.\n\n## Daily Structure\n\n- Morning technical training sessions\n- Small-sided games and possession work\n- Afternoon competitions and scrimmages\n- Themed days and player challenges\n\n## Who Is This For?\n\nPlayers of all levels from U5 through U19. Groups are organized by age and ability to maximize the training environment."
+                                     }
+                     },
+                     {
+                         "id":  "omid",
+                         "title":  "Pro Development Program",
+                         "cat":  "Pro Development",
+                         "age":  "U5â€“U19",
+                         "banner":  "assets/banners/omid.png",
+                         "desc":  "High-level, fast-paced training directed by Omid Namazi â€” technical mastery, tactical themes, and game-realistic reps in a professional environment.",
+                         "meta":  [
+                                      "8 Weeks",
+                                      "Tue \u0026 Wed",
+                                      "4:30 â€“ 6:45 PM"
+                                  ],
+                         "status":  "open",
+                         "visible":  true,
+                         "featured":  true,
+                         "order":  2,
+                         "details":  {
+                                         "kicker":  "Pro Development Program Â· Omid Namazi",
+                                         "tagline":  "Train Like a Pro. Think Like a Pro. Become Your Best.",
+                                         "bannerPlaceholder":  "Drop a banner photo â€” Coach Omid / pro training session",
+                                         "facts":  [
+                                                       {
+                                                           "label":  "Format",
+                                                           "value":  "8-Week Pro Development Clinic"
+                                                       },
+                                                       {
+                                                           "label":  "Season",
+                                                           "value":  "Summer 2026"
+                                                       },
+                                                       {
+                                                           "label":  "Schedule",
+                                                           "value":  "Tue \u0026 Wed Â· 4:30â€“6:45 PM"
+                                                       },
+                                                       {
+                                                           "label":  "Age Groups",
+                                                           "value":  "U5â€“U19"
+                                                       },
+                                                       {
+                                                           "label":  "Director",
+                                                           "value":  "Omid Namazi"
+                                                       },
+                                                       {
+                                                           "label":  "License",
+                                                           "value":  "US Soccer Pro License"
+                                                       }
+                                                   ],
+                                         "body":  "Join us this summer to train with one of the most experienced and respected coaches in the game through the Pro Development Program, personally directed and conducted by Omid Namazi â€” a US Soccer Pro License holder with experience at the professional, national team, and elite youth levels.\n\n## Coaching Pedigree\n\nCoach Namazi brings a wealth of high-level coaching experience, including serving as:\n\n- Current Head Coach of DC Power FC\n- Former coach with Hartford Athletic\n- Former coach with Houston Dynamo\n- Former US Youth National Team coach\n- Former assistant coach for the Iran national football team\n- Former Head Coach of Chicago Stars FC\n\nThis 8-week development clinic is designed to help players improve technically, tactically, and mentally in a high-energy professional training environment."
+                                     }
+                     },
+                     {
+                         "id":  "little-boots",
+                         "title":  "Little Boots",
+                         "cat":  "Foundations",
+                         "age":  "U3â€“U4",
+                         "banner":  "assets/banners/little-boots.png",
+                         "desc":  "First touches, big smiles. A playful introduction to the ball that builds coordination and a love of the game.",
+                         "meta":  [
+                                      "6 Weeks",
+                                      "Saturday Mornings",
+                                      "Parent \u0026 Player"
+                                  ],
+                         "status":  "open",
+                         "visible":  true,
+                         "featured":  true,
+                         "order":  3,
+                         "details":  {
+                                         "tagline":  "Their First Touch. Their First Love.",
+                                         "body":  "The perfect first soccer experience for your youngest player. Little Boots is built around play, movement, and fun.\n\n## What to Expect\n\n- Ball familiarity and basic motor skills\n- Age-appropriate games and activities\n- Positive coaching in a fun environment\n- Building confidence through movement"
+                                     }
+                     },
+                     {
+                         "id":  "footskills",
+                         "title":  "Footskills",
+                         "cat":  "Ball Mastery",
+                         "age":  "U9â€“U14",
+                         "banner":  "assets/banners/footskills.png",
+                         "desc":  "Master the fundamentals of control and dribbling through high-repetition, ball-mastery training built for real-game confidence.",
+                         "meta":  [
+                                      "8 Weeks",
+                                      "Once a Week"
+                                  ],
+                         "status":  "open",
+                         "visible":  true,
+                         "featured":  true,
+                         "order":  4,
+                         "details":  {
+                                         "tagline":  "Master the Ball. Elevate Your Game.",
+                                         "body":  "A foundational technical program for players who want to significantly improve their ball mastery and confidence.\n\n## What We Train\n\n- Ball mastery sequences and patterns\n- Dribbling moves and 1v1 technique\n- Turning, receiving, and body shape\n- Confidence in tight spaces"
+                                     }
+                     },
+                     {
+                         "id":  "pre-travel",
+                         "title":  "Pre-Travel",
+                         "cat":  "Pathway",
+                         "age":  "U5â€“U8",
+                         "banner":  "assets/banners/pre-travel.png",
+                         "desc":  "The bridge to competitive play. Build the foundation, confidence, and habits to step into travel soccer ready.",
+                         "meta":  [
+                                      "8 Weeks",
+                                      "Once a Week"
+                                  ],
+                         "status":  "open",
+                         "visible":  true,
+                         "featured":  false,
+                         "order":  5,
+                         "details":  {
+                                         "tagline":  "From Recreation to Competition.",
+                                         "body":  "The ideal stepping stone for players ready to make the transition from recreational to competitive soccer.\n\n## Key Focus Areas\n\n- Technical foundation â€” first touch, passing, dribbling\n- Introduction to team shape and positioning\n- Competitive mindset development\n- Small-sided game application"
+                                     }
+                     },
+                     {
+                         "id":  "futsal",
+                         "title":  "Futsal Clinic",
+                         "cat":  "Small-Sided",
+                         "age":  "U5â€“U14",
+                         "banner":  "assets/banners/futsal.png",
+                         "desc":  "Fast feet, tight spaces, sharper decisions. The small-sided game that forges close control and quick thinking.",
+                         "meta":  [
+                                      "6 Weeks",
+                                      "Friday Nights"
+                                  ],
+                         "status":  "coming-soon",
+                         "visible":  true,
+                         "featured":  false,
+                         "order":  6,
+                         "details":  {
+                                         "tagline":  "Small Space. Big Development.",
+                                         "body":  "Futsal is one of the most effective technical development tools in the game. Fast, tight, and demanding â€” every touch counts.\n\n## Why Futsal?\n\n- Up to 6x more touches per session vs. outdoor soccer\n- Forces quick decision-making under pressure\n- Builds creativity and close control\n- Used by elite programs worldwide"
+                                     }
+                     },
+                     {
+                         "id":  "gk-brian",
+                         "title":  "Goalkeeper Clinics with Brian",
+                         "cat":  "Goalkeeping",
+                         "age":  "U9â€“U14",
+                         "banner":  "assets/banners/goalkeeper.png",
+                         "desc":  "Elite goalkeeper training covering shot-stopping, positioning, distribution, and game scenariosâ€”led by DC Power US National team coach Brian.",
+                         "meta":  [
+                                      "4 Weeks",
+                                      "Twice a Week"
+                                  ],
+                         "status":  "waitlist",
+                         "visible":  true,
+                         "featured":  false,
+                         "order":  7,
+                         "details":  {
+                                         "tagline":  "Elite Hands. Elite Feet. Elite Mind.",
+                                         "body":  "Position-specific goalkeeper training led by an elite-level coaching staff. Built for goalkeepers who are serious about their craft.\n\n## Technical Curriculum\n\n- Shot-stopping mechanics and footwork\n- Distribution â€” kicks, throws, and short passing\n- Positioning and angles\n- High ball and cross handling\n- Game scenario decision-making"
+                                     }
+                     },
+                     {
+                         "id":  "scoring",
+                         "title":  "Art of Scoring Goals",
+                         "cat":  "Finishing",
+                         "age":  "U9â€“U14",
+                         "banner":  "assets/banners/scoring.png",
+                         "desc":  "Finishing, movement, and the instinct to be in the right place. Turn chances into goals under pressure.",
+                         "meta":  [
+                                      "5 Weeks",
+                                      "Once a Week"
+                                  ],
+                         "status":  "open",
+                         "visible":  true,
+                         "featured":  false,
+                         "order":  8,
+                         "details":  {
+                                         "tagline":  "Clinical. Creative. Relentless.",
+                                         "body":  "Goals win games. This clinic is dedicated entirely to the craft of finishing â€” the movement, the composure, the creativity.\n\n## What You Will Work On\n\n- Off-ball movement and attacking runs\n- Composure and technique under pressure\n- First-time finishing â€” volleys, headers, rebounds\n- Clinical 1v1 situations\n- Pattern play leading to goal"
+                                     }
+                     },
+                     {
+                         "id":  "attacking-1v1",
+                         "title":  "1v1 Attacking",
+                         "cat":  "Dribbling",
+                         "age":  "U9â€“U14",
+                         "banner":  "assets/banners/attacking-1v1.png",
+                         "desc":  "Beat your defender, own the moment. Develop the moves, speed, and bravery to take players on and win.",
+                         "meta":  [
+                                      "5 Weeks",
+                                      "Once a Week"
+                                  ],
+                         "status":  "open",
+                         "visible":  true,
+                         "featured":  false,
+                         "order":  9,
+                         "details":  {
+                                         "tagline":  "Beat Your Defender. Every Time.",
+                                         "body":  "The ability to beat a defender in a 1v1 is one of the most valuable skills in soccer. This clinic is entirely dedicated to that art.\n\n## Training Focus\n\n- Explosive first step and change of direction\n- Dribbling moves â€” cuts, step-overs, feints\n- Body shape and deception\n- Confidence under pressure\n- Game-realistic 1v1 scenarios"
+                                     }
+                     },
+                     {
+                         "id":  "first-touch",
+                         "title":  "First Touch \u0026 Passing",
+                         "cat":  "Technical",
+                         "age":  "U9â€“U14",
+                         "banner":  "assets/banners/first-touch.png",
+                         "desc":  "Clean control and sharp distribution. Refine the two touches every great player relies on, every single game.",
+                         "meta":  [
+                                      "6 Weeks",
+                                      "Once a Week"
+                                  ],
+                         "status":  "open",
+                         "visible":  true,
+                         "featured":  false,
+                         "order":  10,
+                         "details":  {
+                                         "tagline":  "Touch. Pass. Think. Faster.",
+                                         "body":  "Everything in soccer starts with your first touch. This clinic builds the technical foundation that sets elite players apart.\n\n## Technical Curriculum\n\n- Clean first touch in all directions\n- Short and medium range passing\n- Combination play and wall passes\n- Speed of play under pressure\n- Receiving with body turned"
+                                     }
+                     }
+                 ]
 }
