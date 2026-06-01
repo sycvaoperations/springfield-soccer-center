@@ -2,7 +2,7 @@
   "id": "attacking-1v1",
   "title": "1v1 Attacking",
   "cat": "Dribbling",
-  "age": "U9–U14",
+  "age": "U9-U14",
   "banner": "assets/banners/attacking-1v1.png",
   "desc": "Beat your defender, own the moment. Develop the moves, speed, and bravery to take players on and win.",
   "meta": ["5 Weeks", "Once a Week"],
@@ -12,6 +12,6 @@
   "order": 9,
   "details": {
     "tagline": "Beat Your Defender. Every Time.",
-    "body": "The ability to beat a defender in a 1v1 is one of the most valuable skills in soccer. This clinic is entirely dedicated to that art.\n\n## Training Focus\n\n- Explosive first step and change of direction\n- Dribbling moves — cuts, step-overs, feints\n- Body shape and deception\n- Confidence under pressure\n- Game-realistic 1v1 scenarios"
+    "body": "The ability to beat a defender in a 1v1 is one of the most valuable skills in soccer. This clinic is entirely dedicated to that art.\n\n## Training Focus\n\n- Explosive first step and change of direction\n- Dribbling moves - cuts, step-overs, feints\n- Body shape and deception\n- Confidence under pressure\n- Game-realistic 1v1 scenarios"
   }
 }

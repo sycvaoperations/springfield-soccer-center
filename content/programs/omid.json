@@ -2,26 +2,26 @@
   "id": "omid",
   "title": "Pro Development Program",
   "cat": "Pro Development",
-  "age": "U5–U19",
+  "age": "U5-U19",
   "banner": "assets/banners/omid.png",
-  "desc": "High-level, fast-paced training directed by Omid Namazi — technical mastery, tactical themes, and game-realistic reps in a professional environment.",
-  "meta": ["8 Weeks", "Tue & Wed", "4:30 – 6:45 PM"],
+  "desc": "High-level, fast-paced training directed by Omid Namazi - technical mastery, tactical themes, and game-realistic reps in a professional environment.",
+  "meta": ["8 Weeks", "Tue & Wed", "4:30 - 6:45 PM"],
   "status": "open",
   "visible": true,
   "featured": true,
   "order": 2,
   "details": {
-    "kicker": "Pro Development Program · Omid Namazi",
+    "kicker": "Pro Development Program - Omid Namazi",
     "tagline": "Train Like a Pro. Think Like a Pro. Become Your Best.",
-    "bannerPlaceholder": "Drop a banner photo — Coach Omid / pro training session",
+    "bannerPlaceholder": "Drop a banner photo - Coach Omid / pro training session",
     "facts": [
       {"label": "Format", "value": "8-Week Pro Development Clinic"},
       {"label": "Season", "value": "Summer 2026"},
-      {"label": "Schedule", "value": "Tue & Wed · 4:30–6:45 PM"},
-      {"label": "Age Groups", "value": "U5–U19"},
+      {"label": "Schedule", "value": "Tue & Wed - 4:30-6:45 PM"},
+      {"label": "Age Groups", "value": "U5-U19"},
       {"label": "Director", "value": "Omid Namazi"},
       {"label": "License", "value": "US Soccer Pro License"}
     ],
-    "body": "Join us this summer to train with one of the most experienced and respected coaches in the game through the Pro Development Program, personally directed and conducted by Omid Namazi — a US Soccer Pro License holder with experience at the professional, national team, and elite youth levels.\n\n## Coaching Pedigree\n\nCoach Namazi brings a wealth of high-level coaching experience, including serving as:\n\n- Current Head Coach of DC Power FC\n- Former coach with Hartford Athletic\n- Former coach with Houston Dynamo\n- Former US Youth National Team coach\n- Former assistant coach for the Iran national football team\n- Former Head Coach of Chicago Stars FC\n\nThis 8-week development clinic is designed to help players improve technically, tactically, and mentally in a high-energy professional training environment."
+    "body": "Join us this summer to train with one of the most experienced and respected coaches in the game through the Pro Development Program, personally directed and conducted by Omid Namazi - a US Soccer Pro License holder with experience at the professional, national team, and elite youth levels.\n\n## Coaching Pedigree\n\nCoach Namazi brings a wealth of high-level coaching experience, including serving as:\n\n- Current Head Coach of DC Power FC\n- Former coach with Hartford Athletic\n- Former coach with Houston Dynamo\n- Former US Youth National Team coach\n- Former assistant coach for the Iran national football team\n- Former Head Coach of Chicago Stars FC\n\nThis 8-week development clinic is designed to help players improve technically, tactically, and mentally in a high-energy professional training environment."
   }
 }

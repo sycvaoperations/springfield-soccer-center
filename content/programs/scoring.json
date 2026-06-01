@@ -2,7 +2,7 @@
   "id": "scoring",
   "title": "Art of Scoring Goals",
   "cat": "Finishing",
-  "age": "U9–U14",
+  "age": "U9-U14",
   "banner": "assets/banners/scoring.png",
   "desc": "Finishing, movement, and the instinct to be in the right place. Turn chances into goals under pressure.",
   "meta": ["5 Weeks", "Once a Week"],
@@ -12,6 +12,6 @@
   "order": 8,
   "details": {
     "tagline": "Clinical. Creative. Relentless.",
-    "body": "Goals win games. This clinic is dedicated entirely to the craft of finishing — the movement, the composure, the creativity.\n\n## What You Will Work On\n\n- Off-ball movement and attacking runs\n- Composure and technique under pressure\n- First-time finishing — volleys, headers, rebounds\n- Clinical 1v1 situations\n- Pattern play leading to goal"
+    "body": "Goals win games. This clinic is dedicated entirely to the craft of finishing - the movement, the composure, the creativity.\n\n## What You Will Work On\n\n- Off-ball movement and attacking runs\n- Composure and technique under pressure\n- First-time finishing - volleys, headers, rebounds\n- Clinical 1v1 situations\n- Pattern play leading to goal"
   }
 }
