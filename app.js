@@ -1,4 +1,4 @@
-/* Springfield Soccer Center — interactions */
+﻿/* Springfield Soccer Center â€” interactions */
 (function () {
   "use strict";
 
@@ -34,7 +34,7 @@
   requestAnimationFrame(checkReveals);
 
   /* Safety net: after 3s reveal anything in/above the viewport that somehow
-     hasn't fired — but DON'T pre-reveal below-the-fold sections, or their
+     hasn't fired â€” but DON'T pre-reveal below-the-fold sections, or their
      scroll-in animations would play off-screen and look broken. */
   setTimeout(() => {
     const vh = window.innerHeight;
@@ -58,7 +58,7 @@
   /* ---- Category accent + icon system (grouped into 6 type families) ---- */
   const SI = 'stroke="currentColor" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"';
   /* Brand-aligned accent palette: SYC orange anchors it, with warm metals
-     (gold, bronze) and cool brand tones (teal, steel, silver) — cohesive,
+     (gold, bronze) and cool brand tones (teal, steel, silver) â€” cohesive,
      no rainbow, still clearly distinguishable. */
   const FAMILY = {
     foundations: { color: "#1f9aa6", icon: `<svg viewBox="0 0 24 24" ${SI}><path d="M7 20h10"/><path d="M12 20V10"/><path d="M12 11C12 7.5 9.5 5 5.5 5 5.5 8.5 8 11 12 11Z"/><path d="M12 12c0-2.8 2.2-5 5.5-5 0 2.8-2.2 5-5.5 5Z"/></svg>` },
@@ -78,7 +78,7 @@
   };
   const famOf = (p) => FAMILY[CAT_FAMILY[p.cat] || "technical"];
 
-  /* ---- Consolidated metadata → icon glyphs ---- */
+  /* ---- Consolidated metadata â†’ icon glyphs ---- */
   const GLY = {
     age:   `<svg viewBox="0 0 24 24" ${SI}><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.6-3.6 3.5-5.4 7-5.4S18.4 16.4 19 20"/></svg>`,
     dur:   `<svg viewBox="0 0 24 24" ${SI}><path d="M7 3h10M7 21h10"/><path d="M8 3v4.2c0 1.1.5 2.1 1.4 2.8L12 12l-2.6 2c-.9.7-1.4 1.7-1.4 2.8V21"/><path d="M16 3v4.2c0 1.1-.5 2.1-1.4 2.8L12 12l2.6 2c.9.7 1.4 1.7 1.4 2.8V21"/></svg>`,
@@ -93,8 +93,9 @@
     return "sched";
   }
   function metaRow(p) {
-    let out = `<span class="m m-lead">${GLY.age}<span>${p.age}</span></span>`;
-    p.meta.forEach((m) => { out += `<span class="m">${GLY[metaKind(m)]}<span>${m}</span></span>`; });
+    const meta = Array.isArray(p.meta) ? p.meta : [];
+    let out = `<span class="m m-lead">${GLY.age}<span>${p.age || "All Ages"}</span></span>`;
+    meta.forEach((m) => { out += `<span class="m">${GLY[metaKind(m)]}<span>${m}</span></span>`; });
     return out;
   }
 
@@ -106,7 +107,7 @@
     if (!p) return "";
     const f = famOf(p);
     const fam = CAT_FAMILY[p.cat] || "technical";
-    const a11y = `data-id="${id}" data-fam="${fam}" style="--fam:${f.color}" tabindex="0" role="button" aria-haspopup="dialog" aria-label="${p.title} — view details"`;
+    const a11y = `data-id="${id}" data-fam="${fam}" style="--fam:${f.color}" tabindex="0" role="button" aria-haspopup="dialog" aria-label="${p.title} â€” view details"`;
     // On mobile every card uses the rich hero layout so they all look the same.
     const heroLayout = opts.hero || isMobileCards();
     if (heroLayout) {
@@ -223,7 +224,7 @@
     const hintMap = {
       elite: "Featured programs plus elite supplemental training for " + g.label + ".",
       additional: "Featured programs plus additional training options for " + g.label + ".",
-      next: "Programs for " + g.label + " — plus the pathway waiting ahead.",
+      next: "Programs for " + g.label + " â€” plus the pathway waiting ahead.",
     };
     hintEl.textContent = hintMap[sup.kind] || "Programs for " + g.label + ".";
   }
@@ -341,7 +342,7 @@
     requestAnimationFrame(() => moveIndicator(tabsEl.querySelector(".age-tab.active")));
   }
 
-  /* The catalog loads asynchronously from content/programs.json — wait for
+  /* The catalog loads asynchronously from content/programs.json â€” wait for
      it before building the finder, so AGE_GROUPS / IDENTITIES are ready. */
   window.CATALOG_READY.then(() => {
     if (!window.AGE_GROUPS || !window.AGE_GROUPS.length) return;
@@ -381,19 +382,19 @@
   // Build a sensible facts list for programs without authored details
   function fallbackFacts(p) {
     const facts = [{ label: "Age Groups", value: p.age }];
-    p.meta.forEach((m) => {
+    (Array.isArray(p.meta) ? p.meta : []).forEach((m) => {
       let label = "Details";
       if (/per week|x\s*\/|1x|2x|3x/i.test(m)) label = "Frequency";
       else if (/\d+\s*-?\s*week/i.test(m)) label = "Duration";
       else if (/night|sat|sun|mon|tue|wed|thu|fri|&/i.test(m)) label = "Schedule";
-      else if (/\d/.test(m) && /(am|pm|–|-|:)/i.test(m)) label = "Time";
+      else if (/\d/.test(m) && /(am|pm|â€“|-|:)/i.test(m)) label = "Time";
       facts.push({ label, value: m });
     });
     return facts;
   }
 
   /* Render a markdown detail body (headings, bullet lists, paragraphs).
-     The first paragraph is treated as the lead. Kept deliberately small —
+     The first paragraph is treated as the lead. Kept deliberately small â€”
      it covers what the CMS body field produces. */
   function renderMarkdown(md) {
     const blocks = String(md || "")
@@ -529,7 +530,7 @@
   }
 
   /* ============================================================
-     OUR APPROACH — overlap (coverflow) reel carousel, 3 reels
+     OUR APPROACH â€” overlap (coverflow) reel carousel, 3 reels
      Center reel is front & full-size; prev/next peek behind, tilted.
      No auto-scroll. Arrows / dots / swipe / click-a-side navigate.
      Each slide is a drop target (or save assets/reel-N.mp4).
@@ -612,7 +613,7 @@
         video.style.display = "block";
         drop.classList.add("hide");
         slide.classList.add("has-video");
-        // no autoplay — wait for the play button / video click
+        // no autoplay â€” wait for the play button / video click
       };
       fetch("assets/reel-" + (i + 1) + ".mp4", { method: "HEAD" })
         .then((r) => { if (r.ok) show("assets/reel-" + (i + 1) + ".mp4"); })
@@ -673,3 +674,4 @@
     }, { passive: true });
   }
 })();
+

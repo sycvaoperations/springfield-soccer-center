@@ -16,7 +16,7 @@ content:
     path: content/programs
     extension: json
     format: json
-    filename: "{fields.id}.json"
+    filename: "{fields.id}"
     view:
       fields:
         - title
@@ -141,3 +141,4 @@ content:
             label: Detail Copy
             type: text
             description: "Markdown supported. Use ## headings and - bullet lists."
+
