@@ -1,34 +1,64 @@
-name: Rebuild programs.json
+﻿name: Build Program Catalog
 
 on:
   push:
     paths:
-      - "content/programs/*.json"
-    branches:
-      - main
+      - "content/programs/**"
+      - "scripts/build-programs.ps1"
+      - ".github/workflows/build-programs.yml"
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  build-programs:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Rebuild programs.json
-        run: node scripts/build-programs.mjs
+      - name: Build content/programs.json
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
 
-      - name: Commit rebuilt file
+          $InputDir = "content/programs"
+          $OutputFile = "content/programs.json"
+
+          if (!(Test-Path $InputDir)) {
+            throw "Missing folder: $InputDir"
+          }
+
+          $programs = Get-ChildItem "$InputDir/*.json" |
+            ForEach-Object {
+              Write-Host "Reading $($_.Name)"
+              Get-Content $_.FullName -Raw | ConvertFrom-Json
+            } |
+            Sort-Object order
+
+          if ($programs.Count -eq 0) {
+            throw "No program JSON files found in $InputDir"
+          }
+
+          @{
+            programs = @($programs)
+          } | ConvertTo-Json -Depth 20 | Set-Content $OutputFile -Encoding UTF8
+
+          Write-Host "Built $OutputFile with $($programs.Count) programs."
+
+      - name: Commit rebuilt catalog
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add content/programs.json
-          git diff --cached --quiet || git commit -m "chore: rebuild programs.json [skip ci]"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No catalog changes to commit."
+          else
+            git commit -m "Auto-build program catalog"
+            git push
+          fi
