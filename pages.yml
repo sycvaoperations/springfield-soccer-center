@@ -1,0 +1,140 @@
+# ============================================================
+# Pages CMS configuration — Springfield Soccer Center
+# COLLECTION MODEL: each program is its own file in content/programs/.
+# This unlocks a real dashboard (the `view` columns below), search,
+# and sort — the closest Pages CMS gets to the custom mockup.
+#
+# A GitHub Action (.github/workflows/build-programs.yml) bundles these
+# per-program files back into content/programs.json, which the live
+# site reads. Admins never see that step — they just edit and save.
+# ============================================================
+
+media:
+  input: assets/banners
+  output: assets/banners
+  extensions: [jpg, jpeg, png, webp, gif]
+
+content:
+  - name: programs
+    label: Programs
+    type: collection
+    path: content/programs
+    extension: json
+    format: json
+    # New programs are saved as <id>.json. The id is the program's
+    # permanent address — see the warning on the field below.
+    filename: '{fields.id}'
+    # Dashboard columns shown in the list view (this is the at-a-glance table).
+    view:
+      fields: [banner, title, cat, status, visible, order]
+      primary: title
+    fields:
+      - name: title
+        label: Program name
+        type: string
+        required: true
+        description: Shown as the card title on the website.
+
+      - name: cat
+        label: Category
+        type: select
+        description: Sets the card's color and icon.
+        options:
+          values:
+            - Foundations
+            - Pathway
+            - Camp
+            - Pro Development
+            - Small-Sided
+            - Ball Mastery
+            - Technical
+            - Dribbling
+            - Finishing
+            - Goalkeeping
+
+      - name: age
+        label: Age range
+        type: string
+        description: e.g. U8–U14
+
+      - name: desc
+        label: Short description
+        type: text
+        description: One or two sentences shown on the card.
+
+      - name: banner
+        label: Photo
+        type: image
+
+      - name: status
+        label: Registration status
+        type: select
+        description: >
+          Open = button reads "Register", Waitlist only = "Join Waitlist",
+          Coming soon = "Notify Me".
+        options:
+          values:
+            - name: open
+              label: Open — register now
+            - name: waitlist
+              label: Waitlist only
+            - name: coming-soon
+              label: Coming soon
+
+      - name: visible
+        label: Show on website
+        type: boolean
+        description: Turn off to hide a program without deleting it (e.g. between seasons).
+
+      - name: featured
+        label: Feature in the "For You" row
+        type: boolean
+        description: Featured programs lead the top row on the All Programs tab.
+
+      - name: order
+        label: Display order
+        type: number
+        description: Lower numbers appear first.
+
+      # --- Optional rich detail shown in the program lightbox ---
+      - name: details
+        label: Detail page (optional)
+        type: object
+        description: Fill these in for a full detail view. Leave blank for an auto-generated one.
+        fields:
+          - name: tagline
+            label: Tagline
+            type: string
+
+          - name: facts
+            label: Quick facts
+            type: object
+            list: true
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: value
+                label: Value
+                type: string
+
+          - name: body
+            label: Detail copy
+            type: rich-text
+            description: >
+              Use a Heading for section titles and a bullet list for points.
+              The first paragraph shows larger as the intro.
+
+      # --- Danger zone: the program's permanent address (= the filename) ---
+      # `pattern` blocks spaces/capitals that would break links.
+      - name: id
+        label: "ID / slug — do not change after creating"
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: "Use lowercase letters, numbers, and hyphens only — no spaces."
+        description: >
+          WARNING: this is the program's permanent address, used in website
+          links and as the file name. Set it once when you create the program.
+          Changing it later breaks every existing link to this program.
