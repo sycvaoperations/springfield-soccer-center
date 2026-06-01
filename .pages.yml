@@ -1,18 +1,13 @@
-# ============================================================
-# Pages CMS configuration — Springfield Soccer Center
-# COLLECTION MODEL: each program is its own file in content/programs/.
-# This unlocks a real dashboard (the `view` columns below), search,
-# and sort — the closest Pages CMS gets to the custom mockup.
-#
-# A GitHub Action (.github/workflows/build-programs.yml) bundles these
-# per-program files back into content/programs.json, which the live
-# site reads. Admins never see that step — they just edit and save.
-# ============================================================
-
-media:
+﻿media:
   input: assets/banners
   output: assets/banners
-  extensions: [jpg, jpeg, png, webp, gif]
+  extensions:
+    - jpg
+    - jpeg
+    - png
+    - webp
+    - gif
+  rename: safe
 
 content:
   - name: programs
@@ -21,24 +16,36 @@ content:
     path: content/programs
     extension: json
     format: json
-    # New programs are saved as <id>.json. The id is the program's
-    # permanent address — see the warning on the field below.
-    filename: '{fields.id}'
-    # Dashboard columns shown in the list view (this is the at-a-glance table).
+    filename: "{fields.id}.json"
     view:
-      fields: [banner, title, cat, status, visible, order]
+      fields:
+        - title
+        - cat
+        - status
+        - visible
+        - order
       primary: title
+      sort:
+        - order
+        - title
     fields:
-      - name: title
-        label: Program name
+      - name: id
+        label: Program ID
         type: string
         required: true
-        description: Shown as the card title on the website.
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: "Use lowercase letters, numbers, and hyphens only."
+
+      - name: title
+        label: Program Name
+        type: string
+        required: true
 
       - name: cat
         label: Category
         type: select
-        description: Sets the card's color and icon.
+        required: true
         options:
           values:
             - Foundations
@@ -53,61 +60,72 @@ content:
             - Goalkeeping
 
       - name: age
-        label: Age range
+        label: Age Range
         type: string
-        description: e.g. U8–U14
-
-      - name: desc
-        label: Short description
-        type: text
-        description: One or two sentences shown on the card.
+        required: true
 
       - name: banner
-        label: Photo
+        label: Banner Image
         type: image
 
+      - name: desc
+        label: Short Description
+        type: text
+        required: true
+
+      - name: meta
+        label: Card Details
+        type: string
+        list: true
+        description: "Examples: 6 Weeks, Friday Nights, 8:00 AM - 3:30 PM"
+
       - name: status
-        label: Registration status
+        label: Registration Status
         type: select
-        description: >
-          Open = button reads "Register", Waitlist only = "Join Waitlist",
-          Coming soon = "Notify Me".
+        required: true
         options:
           values:
             - name: open
-              label: Open — register now
+              label: Open
             - name: waitlist
-              label: Waitlist only
+              label: Waitlist
             - name: coming-soon
-              label: Coming soon
+              label: Coming Soon
 
       - name: visible
-        label: Show on website
+        label: Show on Website
         type: boolean
-        description: Turn off to hide a program without deleting it (e.g. between seasons).
 
       - name: featured
-        label: Feature in the "For You" row
+        label: Featured Program
         type: boolean
-        description: Featured programs lead the top row on the All Programs tab.
 
       - name: order
-        label: Display order
+        label: Display Order
         type: number
-        description: Lower numbers appear first.
 
-      # --- Optional rich detail shown in the program lightbox ---
       - name: details
-        label: Detail page (optional)
+        label: Lightbox Details
         type: object
-        description: Fill these in for a full detail view. Leave blank for an auto-generated one.
         fields:
+          - name: kicker
+            label: Kicker / Category Override
+            type: string
+
+          - name: title
+            label: Detail Title Override
+            type: string
+
           - name: tagline
             label: Tagline
             type: string
 
+          - name: bannerPlaceholder
+            label: Banner Placeholder
+            type: string
+
           - name: facts
-            label: Quick facts
+            label: Quick Facts
             type: object
             list: true
             fields:
@@ -119,22 +137,6 @@ content:
                 type: string
 
           - name: body
-            label: Detail copy
-            type: rich-text
-            description: >
-              Use a Heading for section titles and a bullet list for points.
-              The first paragraph shows larger as the intro.
-
-      # --- Danger zone: the program's permanent address (= the filename) ---
-      # `pattern` blocks spaces/capitals that would break links.
-      - name: id
-        label: "ID / slug — do not change after creating"
-        type: string
-        required: true
-        pattern:
-          regex: "^[a-z0-9-]+$"
-          message: "Use lowercase letters, numbers, and hyphens only — no spaces."
-        description: >
-          WARNING: this is the program's permanent address, used in website
-          links and as the file name. Set it once when you create the program.
-          Changing it later breaks every existing link to this program.
+            label: Detail Copy
+            type: text
+            description: "Markdown supported. Use ## headings and - bullet lists."
