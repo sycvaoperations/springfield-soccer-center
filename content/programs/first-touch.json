@@ -1,0 +1,17 @@
+{
+  "id": "first-touch",
+  "title": "First Touch & Passing",
+  "cat": "Technical",
+  "age": "U9–U14",
+  "banner": "assets/banners/first-touch.png",
+  "desc": "Clean control and sharp distribution. Refine the two touches every great player relies on, every single game.",
+  "meta": ["6 Weeks", "Once a Week"],
+  "status": "open",
+  "visible": true,
+  "featured": false,
+  "order": 10,
+  "details": {
+    "tagline": "Touch. Pass. Think. Faster.",
+    "body": "Everything in soccer starts with your first touch. This clinic builds the technical foundation that sets elite players apart.\n\n## Technical Curriculum\n\n- Clean first touch in all directions\n- Short and medium range passing\n- Combination play and wall passes\n- Speed of play under pressure\n- Receiving with body turned"
+  }
+}

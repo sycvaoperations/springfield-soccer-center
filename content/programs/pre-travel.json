@@ -1,0 +1,17 @@
+{
+  "id": "pre-travel",
+  "title": "Pre-Travel",
+  "cat": "Pathway",
+  "age": "U5–U8",
+  "banner": "assets/banners/pre-travel.png",
+  "desc": "The bridge to competitive play. Build the foundation, confidence, and habits to step into travel soccer ready.",
+  "meta": ["8 Weeks", "Once a Week"],
+  "status": "open",
+  "visible": true,
+  "featured": false,
+  "order": 5,
+  "details": {
+    "tagline": "From Recreation to Competition.",
+    "body": "The ideal stepping stone for players ready to make the transition from recreational to competitive soccer.\n\n## Key Focus Areas\n\n- Technical foundation — first touch, passing, dribbling\n- Introduction to team shape and positioning\n- Competitive mindset development\n- Small-sided game application"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "footskills",
+  "title": "Footskills",
+  "cat": "Ball Mastery",
+  "age": "U9–U14",
+  "banner": "assets/banners/footskills.png",
+  "desc": "Master the fundamentals of control and dribbling through high-repetition, ball-mastery training built for real-game confidence.",
+  "meta": ["8 Weeks", "Once a Week"],
+  "status": "open",
+  "visible": true,
+  "featured": true,
+  "order": 4,
+  "details": {
+    "tagline": "Master the Ball. Elevate Your Game.",
+    "body": "A foundational technical program for players who want to significantly improve their ball mastery and confidence.\n\n## What We Train\n\n- Ball mastery sequences and patterns\n- Dribbling moves and 1v1 technique\n- Turning, receiving, and body shape\n- Confidence in tight spaces"
+  }
+}

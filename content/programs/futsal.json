@@ -1,0 +1,17 @@
+{
+  "id": "futsal",
+  "title": "Futsal Clinic",
+  "cat": "Small-Sided",
+  "age": "U5–U14",
+  "banner": "assets/banners/futsal.png",
+  "desc": "Fast feet, tight spaces, sharper decisions. The small-sided game that forges close control and quick thinking.",
+  "meta": ["6 Weeks", "Friday Nights"],
+  "status": "coming-soon",
+  "visible": true,
+  "featured": false,
+  "order": 6,
+  "details": {
+    "tagline": "Small Space. Big Development.",
+    "body": "Futsal is one of the most effective technical development tools in the game. Fast, tight, and demanding — every touch counts.\n\n## Why Futsal?\n\n- Up to 6x more touches per session vs. outdoor soccer\n- Forces quick decision-making under pressure\n- Builds creativity and close control\n- Used by elite programs worldwide"
+  }
+}

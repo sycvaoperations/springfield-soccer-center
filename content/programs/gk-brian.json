@@ -1,0 +1,17 @@
+{
+  "id": "gk-brian",
+  "title": "Goalkeeper Clinics with Brian",
+  "cat": "Goalkeeping",
+  "age": "U9–U14",
+  "banner": "assets/banners/goalkeeper.png",
+  "desc": "Elite goalkeeper training covering shot-stopping, positioning, distribution, and game scenarios—led by DC Power US National team coach Brian.",
+  "meta": ["4 Weeks", "Twice a Week"],
+  "status": "waitlist",
+  "visible": true,
+  "featured": false,
+  "order": 7,
+  "details": {
+    "tagline": "Elite Hands. Elite Feet. Elite Mind.",
+    "body": "Position-specific goalkeeper training led by an elite-level coaching staff. Built for goalkeepers who are serious about their craft.\n\n## Technical Curriculum\n\n- Shot-stopping mechanics and footwork\n- Distribution — kicks, throws, and short passing\n- Positioning and angles\n- High ball and cross handling\n- Game scenario decision-making"
+  }
+}
