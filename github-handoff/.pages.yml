@@ -1,0 +1,128 @@
+# ============================================================
+# Pages CMS configuration — Springfield Soccer Center
+# ============================================================
+# Admins sign in at app.pagescms.org, edit programs through the
+# form below, and Pages CMS commits changes to content/programs.json.
+# GitHub Pages then redeploys the site automatically.
+# ============================================================
+
+# Where uploaded program photos are stored / served from.
+# (No leading slash, so paths stay relative for GitHub Pages.)
+media:
+  input: assets/banners
+  output: assets/banners
+  extensions: [jpg, jpeg, png, webp, gif]
+
+content:
+  - name: programs
+    label: Programs
+    type: file
+    path: content/programs.json
+    fields:
+      - name: programs
+        label: Program
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Program name
+            type: string
+            required: true
+
+          - name: cat
+            label: Category
+            type: select
+            description: Sets the card's accent color and icon.
+            options:
+              values:
+                - Foundations
+                - Pathway
+                - Camp
+                - Pro Development
+                - Small-Sided
+                - Ball Mastery
+                - Technical
+                - Dribbling
+                - Finishing
+                - Goalkeeping
+
+          - name: age
+            label: Age range
+            type: string
+            description: e.g. U5–U19
+
+          - name: desc
+            label: Short description
+            type: text
+            description: One or two sentences shown on the card.
+
+          - name: banner
+            label: Photo
+            type: image
+
+          - name: status
+            label: Registration status
+            type: select
+            description: >
+              Controls the badge logic and the button label. Open = "Register",
+              Waitlist only = "Join Waitlist", Coming soon = "Notify Me".
+            options:
+              values:
+                - name: open
+                  label: Open — register now
+                - name: waitlist
+                  label: Waitlist only
+                - name: coming-soon
+                  label: Coming soon
+
+          - name: visible
+            label: Show on website
+            type: boolean
+            description: Turn off to hide a program without deleting it (e.g. between seasons).
+
+          - name: featured
+            label: Feature in the "For You" row
+            type: boolean
+            description: Featured programs lead the top row on the All Programs tab.
+
+          - name: order
+            label: Display order
+            type: number
+            description: Lower numbers appear first.
+
+          - name: id
+            label: ID
+            type: string
+            required: true
+            description: >
+              Used internally for links — set once when you create a program
+              (lowercase, hyphens, no spaces) and don't change it afterward.
+
+          # --- Optional rich detail shown in the program lightbox ---
+          - name: details
+            label: Detail page (optional)
+            type: object
+            description: Fill these in for a full detail view. Leave blank for an auto-generated one.
+            fields:
+              - name: tagline
+                label: Tagline
+                type: string
+
+              - name: facts
+                label: Quick facts
+                type: object
+                list: true
+                fields:
+                  - name: label
+                    label: Label
+                    type: string
+                  - name: value
+                    label: Value
+                    type: string
+
+              - name: body
+                label: Detail copy
+                type: rich-text
+                description: >
+                  Use a Heading for section titles and a bullet list for points.
+                  The first paragraph shows larger as the intro.
