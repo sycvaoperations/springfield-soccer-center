@@ -1,10 +1,11 @@
-﻿name: Build Program Catalog
+name: Build Program Catalog
 
 on:
   push:
     paths:
       - "content/programs/**"
       - "scripts/build-programs.ps1"
+      - "scripts/generate-programs-seo.js"
       - ".github/workflows/build-programs.yml"
 
 permissions:
@@ -19,6 +20,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
       - name: Build content/programs.json
         shell: pwsh
@@ -49,16 +55,19 @@ jobs:
 
           Write-Host "Built $OutputFile with $($programs.Count) programs."
 
-      - name: Commit rebuilt catalog
+      - name: Inject crawlable SEO section into index.html
+        run: node scripts/generate-programs-seo.js
+
+      - name: Commit rebuilt catalog and SEO section
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add content/programs.json
+          git add content/programs.json index.html
 
           if git diff --cached --quiet; then
             echo "No catalog changes to commit."
           else
-            git commit -m "Auto-build program catalog"
+            git commit -m "Auto-build program catalog and SEO section [skip ci]"
             git push
           fi

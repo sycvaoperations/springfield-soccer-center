@@ -8,4 +8,4 @@ Allow: /
 Disallow: /content/
 Disallow: /cms/
 
-Sitemap: https://www.springfieldsoccer.com/sitemap.xml
+Sitemap: https://www.springfieldsoccercenter.com/sitemap.xml
