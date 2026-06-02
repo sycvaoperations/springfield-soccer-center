@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Springfield Soccer Center sitemap.
+     This is a single-page site; the homepage is the one indexable URL today.
+     When crawlable program sections / pages are added (see the SEO plan),
+     add a <url> entry for each with its own <loc>. Update <lastmod> on publish. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.springfieldsoccer.com/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

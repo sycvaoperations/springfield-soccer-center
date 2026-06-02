@@ -373,6 +373,29 @@
   const pmFacts = document.getElementById("pmFacts");
   const pmContent = document.getElementById("pmContent");
   const pmRegister = document.getElementById("pmRegister");
+  const pmNotify = document.getElementById("pmNotify");
+  const pmNotifyWrap = document.getElementById("pmNotifyWrap");
+  const pmNotifyEyebrow = document.getElementById("pmNotifyEyebrow");
+  const pmNotifyNote = document.getElementById("pmNotifyNote");
+  const pmNotifyBtn = document.getElementById("pmNotifyBtn");
+  const pmNotifyEmail = document.getElementById("pmNotifyEmail");
+  const pmNotifySuccess = document.getElementById("pmNotifySuccess");
+  const pmNotifyMsg = document.getElementById("pmNotifyMsg");
+  let currentProgram = null;
+
+  /* Per-status copy + icon for the waitlist / coming-soon capture module. */
+  const NOTIFY_UI = {
+    "waitlist": {
+      eyebrow: "Join the Waitlist",
+      icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+      success: "You're on the waitlist — we'll reach out the moment a spot opens up.",
+    },
+    "coming-soon": {
+      eyebrow: "Get Notified",
+      icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>',
+      success: "You're on the list — we'll email you the moment registration opens.",
+    },
+  };
   const pmDialog = modal.querySelector(".pmodal-dialog");
   let lastFocus = null;
 
@@ -443,12 +466,34 @@
       bodyHTML +
       (d.tagline ? `<p class="pm-tagline">${esc(d.tagline)}</p>` : "");
 
-    /* Registration status drives the footer button + note. */
+    /* Footer composition by registration status:
+         open        → supporting note + external "Register" link
+         waitlist /
+         coming-soon → purpose-built email-capture module (Web3Forms, no backend);
+                       the Register link is removed entirely. */
     const sm = (window.STATUS_META || {})[p.status || "open"] || (window.STATUS_META || {}).open || { cta: "Register", note: "" };
-    pmRegister.innerHTML = `${esc(sm.cta)} <span class="arr">&rarr;</span>`;
-    pmRegister.href = REGISTER_URL;
+    currentProgram = { id: id, name: d.title || p.title, cat: p.cat, status: p.status || "open" };
     const footNote = modal.querySelector(".pm-foot-note");
-    if (footNote && sm.note) footNote.textContent = sm.note;
+
+    const capture = (p.status === "waitlist" || p.status === "coming-soon");
+    if (pmNotifySuccess) pmNotifySuccess.hidden = true;
+    if (capture) {
+      const ui = NOTIFY_UI[p.status] || NOTIFY_UI["coming-soon"];
+      pmRegister.hidden = true;
+      if (footNote) footNote.hidden = true;
+      pmNotifyWrap.hidden = false;
+      pmNotifyEyebrow.innerHTML = ui.icon + "<span>" + esc(ui.eyebrow) + "</span>";
+      pmNotifyNote.textContent = sm.note || "";
+      pmNotifyBtn.innerHTML = `${esc(sm.cta)} <span class="arr">&rarr;</span>`;
+      pmNotifyEmail.value = "";
+      if (pmNotifyMsg) pmNotifyMsg.textContent = ui.success;
+    } else {
+      if (pmNotifyWrap) pmNotifyWrap.hidden = true;
+      pmRegister.hidden = false;
+      if (footNote) { footNote.hidden = false; if (sm.note) footNote.textContent = sm.note; }
+      pmRegister.innerHTML = `${esc(sm.cta)} <span class="arr">&rarr;</span>`;
+      pmRegister.href = REGISTER_URL;
+    }
 
     lastFocus = document.activeElement;
     modal.classList.add("open");
@@ -484,6 +529,61 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && modal.classList.contains("open")) closeModal();
   });
+
+  /* ---- Notify / waitlist email capture → Web3Forms (no backend) ----
+     For waitlist + coming-soon programs the footer shows an email field
+     instead of the Register link. Submitting posts the lead to Web3Forms
+     (set the access key on #pmNotify) and fires submit_notify_request. */
+  if (pmNotify) {
+    pmNotify.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!pmNotify.reportValidity()) return;
+      const key = pmNotify.getAttribute("data-web3forms-key") || "";
+      const email = pmNotifyEmail.value.trim();
+      const prog = currentProgram || {};
+      const reqType = prog.status === "waitlist" ? "waitlist" : "notify";
+      const origLabel = pmNotifyBtn.innerHTML;
+      pmNotifyBtn.disabled = true;
+      pmNotifyBtn.innerHTML = "Sending&hellip;";
+
+      /* analytics — same dataLayer contract as analytics.js */
+      (window.dataLayer = window.dataLayer || []).push({
+        event: "submit_notify_request",
+        request_type: reqType,
+        program_id: prog.id,
+        program_name: prog.name,
+        program_category: prog.cat,
+        program_status: prog.status,
+      });
+
+      const finish = () => {
+        pmNotifyWrap.hidden = true;
+        pmNotifySuccess.hidden = false;
+        pmNotifyBtn.disabled = false;
+        pmNotifyBtn.innerHTML = origLabel;
+      };
+
+      /* No key configured yet → still confirm so the flow is testable. */
+      if (!key || key === "REPLACE_WITH_WEB3FORMS_ACCESS_KEY") { finish(); return; }
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          access_key: key,
+          subject: (reqType === "waitlist" ? "Waitlist request: " : "Notify request: ") + (prog.name || "Program"),
+          from_name: "SSC Website — Notify Me",
+          email: email,
+          program: prog.name || "",
+          request_type: reqType,
+          botcheck: (pmNotify.querySelector('[name="botcheck"]') || {}).value || "",
+        }),
+      })
+        .then((r) => r.json())
+        .then(() => finish())
+        .catch(() => finish()); /* fail soft: lead already captured in dataLayer */
+    });
+  }
 
   /* ============================================================
      CONTACT LIGHTBOX

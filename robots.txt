@@ -1,0 +1,11 @@
+# robots.txt — Springfield Soccer Center
+# Confirm the domain below matches your live site.
+
+User-agent: *
+Allow: /
+
+# Keep internal/content data files out of search results
+Disallow: /content/
+Disallow: /cms/
+
+Sitemap: https://www.springfieldsoccer.com/sitemap.xml

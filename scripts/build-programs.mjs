@@ -1,30 +1,26 @@
-// build-programs.mjs
-// Reads all JSON files from content/programs/ and writes content/programs.json
-// Run with: node scripts/build-programs.mjs
-// Also triggered automatically by GitHub Actions on every push.
+// Bundles the per-program files in content/programs/*.json back into a single
+// content/programs.json that the live website reads. Run automatically by the
+// GitHub Action whenever an admin saves a program in Pages CMS.
+//
+// Run locally with:  node scripts/build-programs.mjs
+import { readdir, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
 
-import { readdir, readFile, writeFile } from "fs/promises";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
+const DIR = "content/programs";
+const OUT = "content/programs.json";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const root = join(__dirname, "..");
-const inputDir = join(root, "content", "programs");
-const outputFile = join(root, "content", "programs.json");
+const files = (await readdir(DIR)).filter((f) => f.endsWith(".json"));
+const programs = [];
 
-const files = (await readdir(inputDir))
-  .filter((f) => f.endsWith(".json"))
-  .sort();
+for (const f of files) {
+  const raw = await readFile(path.join(DIR, f), "utf8");
+  const data = JSON.parse(raw);
+  // The filename is the source of truth for the id.
+  if (!data.id) data.id = f.replace(/\.json$/, "");
+  programs.push(data);
+}
 
-const programs = await Promise.all(
-  files.map(async (f) => {
-    const raw = await readFile(join(inputDir, f), "utf8");
-    return JSON.parse(raw);
-  })
-);
-
-// Sort by order field so the live site reads them in the right sequence
 programs.sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 
-await writeFile(outputFile, JSON.stringify({ programs }, null, 2));
-console.log(`✓ Built content/programs.json from ${programs.length} files`);
+await writeFile(OUT, JSON.stringify({ programs }, null, 2) + "\n");
+console.log(`Bundled ${programs.length} programs → ${OUT}`);

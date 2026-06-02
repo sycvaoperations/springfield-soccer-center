@@ -3,16 +3,116 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Springfield Soccer Center</title>
+
+<!-- ===================== PRIMARY SEO ===================== -->
+<!-- NOTE: confirm the production domain below matches your live URL, then keep
+     it identical across canonical, og:url, sitemap.xml, and robots.txt. -->
+<title>Springfield Soccer Center | Youth Soccer Training, Camps & Clinics in Springfield, VA</title>
+<meta name="description" content="Year-round indoor soccer development in Springfield, VA. Camps, clinics, goalkeeper &amp; futsal training, pre-travel development, and supplemental skills programs for youth players U3–U19. Plus premium indoor turf rentals." />
+<link rel="canonical" href="https://www.springfieldsoccer.com/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="geo.region" content="US-VA" />
+<meta name="geo.placename" content="Springfield, Virginia" />
+
+<!-- ===================== OPEN GRAPH / SOCIAL ===================== -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Springfield Soccer Center" />
+<meta property="og:title" content="Springfield Soccer Center | Youth Soccer Training, Camps & Clinics" />
+<meta property="og:description" content="Year-round indoor soccer development in Springfield, VA — camps, clinics, goalkeeper, futsal, and pre-travel training for youth players, plus indoor turf rentals." />
+<meta property="og:url" content="https://www.springfieldsoccer.com/" />
+<meta property="og:image" content="https://www.springfieldsoccer.com/assets/facility-banner.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Springfield Soccer Center — Youth Soccer Development, Springfield VA" />
+<meta name="twitter:description" content="Camps, clinics, goalkeeper &amp; futsal training, and indoor turf rentals in Springfield, VA." />
+<meta name="twitter:image" content="https://www.springfieldsoccer.com/assets/facility-banner.png" />
+
+<!-- ===================== STRUCTURED DATA (JSON-LD) ===================== -->
+<!-- Confirm streetAddress, postalCode, telephone, geo coords, and sameAs social
+     URLs with your real values (placeholders flagged below). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.springfieldsoccer.com/#website",
+      "url": "https://www.springfieldsoccer.com/",
+      "name": "Springfield Soccer Center",
+      "publisher": { "@id": "https://www.springfieldsoccer.com/#org" }
+    },
+    {
+      "@type": "SportsOrganization",
+      "@id": "https://www.springfieldsoccer.com/#org",
+      "name": "Springfield Soccer Center",
+      "url": "https://www.springfieldsoccer.com/",
+      "logo": "https://www.springfieldsoccer.com/assets/ssc-logo-full.png",
+      "email": "play@springfieldsoccer.com",
+      "parentOrganization": {
+        "@type": "SportsOrganization",
+        "name": "Springfield South County Youth Club",
+        "alternateName": "SYC",
+        "url": "https://sycva.com"
+      },
+      "sameAs": [
+        "https://www.instagram.com/",
+        "https://twitter.com/",
+        "https://www.youtube.com/"
+      ]
+    },
+    {
+      "@type": "SportsActivityLocation",
+      "@id": "https://www.springfieldsoccer.com/#facility",
+      "name": "Springfield Soccer Center",
+      "description": "Year-round indoor soccer development facility offering youth camps, clinics, and skills training, plus premium indoor turf rentals.",
+      "url": "https://www.springfieldsoccer.com/",
+      "image": "https://www.springfieldsoccer.com/assets/facility-banner.png",
+      "telephone": "+1-571-555-0100",
+      "email": "play@springfieldsoccer.com",
+      "parentOrganization": { "@id": "https://www.springfieldsoccer.com/#org" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "TODO — add street address",
+        "addressLocality": "Springfield",
+        "addressRegion": "VA",
+        "postalCode": "TODO",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Springfield" },
+        { "@type": "AdministrativeArea", "name": "Fairfax County" },
+        { "@type": "AdministrativeArea", "name": "Northern Virginia" }
+      ],
+      "sport": "Soccer"
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="icon" type="image/png" href="assets/ssc-shield.png" />
-<link rel="stylesheet" href="styles.css?v=41" />
+<link rel="stylesheet" href="styles.css?v=43" />
 <script>document.documentElement.classList.add('anim');</script>
+
+<!-- ===================== Google Tag Manager ===================== -->
+<!-- TODO: replace BOTH instances of GTM-XXXXXXX (here + the noscript below) with
+     your real container ID. The guard below keeps the placeholder from making a
+     network request until a real ID is set; events still queue via analytics.js. -->
+<script>(function(w,d,s,l,i){
+if(!i||i.indexOf('GTM-')!==0||i==='GTM-XXXXXXX')return; /* not configured yet */
+w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- ===================== End Google Tag Manager ===================== -->
 
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- ================= NAV ================= -->
 <header class="nav">
@@ -310,8 +410,31 @@
       <div class="pm-content" id="pmContent"></div>
     </div>
     <div class="pmodal-foot">
+      <!-- OPEN state: supporting note + external Register link -->
       <span class="pm-foot-note">Spots are limited — secure your place for the season.</span>
       <a class="btn btn-primary" id="pmRegister" href="#register">Register Now <span class="arr">&rarr;</span></a>
+
+      <!-- WAITLIST / COMING-SOON state: purpose-built email-capture module.
+           TODO: replace data-web3forms-key with your real Web3Forms access key. -->
+      <div class="pm-notify-wrap" id="pmNotifyWrap" hidden>
+        <div class="pm-notify-lead">
+          <span class="pm-notify-eyebrow" id="pmNotifyEyebrow"></span>
+          <span class="pm-notify-note" id="pmNotifyNote"></span>
+        </div>
+        <form class="pm-notify" id="pmNotify" data-web3forms-key="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
+          <input type="email" id="pmNotifyEmail" name="email" autocomplete="email" required placeholder="you@email.com" aria-label="Your email" />
+          <input type="text" name="botcheck" class="pm-botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn btn-primary" id="pmNotifyBtn">Notify Me <span class="arr">&rarr;</span></button>
+        </form>
+      </div>
+
+      <!-- SUCCESS state (replaces the capture module after submit) -->
+      <div class="pm-notify-success" id="pmNotifySuccess" hidden>
+        <span class="pm-notify-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+        <span class="pm-notify-msg" id="pmNotifyMsg">You're on the list — we'll email you the moment registration opens.</span>
+      </div>
     </div>
   </div>
 </div>
@@ -387,7 +510,8 @@
 <!-- scripts -->
 <script src="image-slot.js"></script>
 <script src="data.js?v=12"></script>
-<script src="app.js?v=15"></script>
+<script src="app.js?v=17"></script>
+<script src="analytics.js?v=1"></script>
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
