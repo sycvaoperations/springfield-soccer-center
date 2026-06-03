@@ -225,6 +225,10 @@
       "status": "open",
       "visible": true,
       "featured": false,
+      "ageU3U4": false,
+      "ageU5U6": false,
+      "ageU7U12": false,
+      "ageU13U19": false,
       "order": 10,
       "details": {
         "tagline": "Touch. Pass. Think. Faster.",
