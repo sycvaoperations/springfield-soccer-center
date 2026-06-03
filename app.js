@@ -624,8 +624,36 @@
     cForm.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!cForm.reportValidity()) return;
-      cForm.hidden = true;
-      cSuccess.hidden = false;
+
+      const key = cForm.getAttribute("data-web3forms-key") || "";
+      const fd = new FormData(cForm);
+      const body = {
+        access_key: key,
+        subject: "New Contact — Springfield Soccer Center",
+        from_name: [fd.get("first"), fd.get("last")].filter(Boolean).join(" ") || "Website Visitor",
+        email: fd.get("email") || "",
+        phone: fd.get("phone") || "",
+        age_group: fd.get("age") || "",
+        topic: fd.get("topic") || "",
+        message: fd.get("message") || "",
+        botcheck: fd.get("botcheck") || "",
+      };
+
+      const finish = () => { cForm.hidden = true; cSuccess.hidden = false; };
+
+      if (!key) { finish(); return; }
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(body),
+      })
+        .then(r => r.json())
+        .then(d => {
+          if (window.dataLayer) window.dataLayer.push({ event: "contact_form_submit", form_id: "contactForm", success: d.success });
+          finish();
+        })
+        .catch(() => finish()); // still show success on network error
     });
   }
 
