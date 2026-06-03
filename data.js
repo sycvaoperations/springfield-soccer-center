@@ -19,7 +19,10 @@
                    /Notify Me button behavior
      visible   true / false  → hide a program without deleting it
      featured  true / false  → leads the "For You" row in the All tab
-     ageGroups string[]      → which age tabs to appear under
+     ageU3U4   true / false  → show in U3–U4 tab
+     ageU5U6   true / false  → show in U5–U6 tab
+     ageU7U12  true / false  → show in U7–U12 tab
+     ageU13U19 true / false  → show in U13–U19 tab
      order     number        → display order (low = first)
      details   (optional) rich lightbox content — tagline, facts, and a
                  markdown body. Editable in the CMS; programs without it
@@ -47,7 +50,7 @@ window.STATUS_META = {
 
 /* ---- Age-group merchandising config -------------------------------
    Defines the tab structure only. Program assignment is driven by
-   each program's ageGroups field in the CMS — no hardcoded IDs here.
+   per-program boolean fields in the CMS — no hardcoded IDs here.
    The "all" tab is assembled dynamically from the full catalog. */
 const AGE_GROUPS_CONFIG = [
   {
@@ -118,7 +121,7 @@ window.CATALOG_READY = fetch("content/programs.json", { cache: "no-store" })
 
     const exists = (id) => Object.prototype.hasOwnProperty.call(PROGRAMS, id);
 
-    /* Build age groups dynamically from each program's ageGroups field. */
+    /* Build age groups dynamically from each program's age boolean fields. */
     window.AGE_GROUPS = AGE_GROUPS_CONFIG
       .map((g) => {
         if (g.dynamic) {
@@ -126,9 +129,13 @@ window.CATALOG_READY = fetch("content/programs.json", { cache: "no-store" })
           const rest = visible.filter((p) => !p.featured).map((p) => p.id);
           return { ...g, featured, supplemental: { ...g.supplemental, ids: rest } };
         }
-        const inGroup = visible.filter((p) =>
-          Array.isArray(p.ageGroups) && p.ageGroups.includes(g.id)
-        );
+        const inGroup = visible.filter((p) => {
+          if (g.id === "u3-u4")   return !!p.ageU3U4;
+          if (g.id === "u5-u6")   return !!p.ageU5U6;
+          if (g.id === "u7-u12")  return !!p.ageU7U12;
+          if (g.id === "u13-u19") return !!p.ageU13U19;
+          return false;
+        });
         const featured = inGroup.filter((p) => p.featured).map((p) => p.id);
         const supplemental = inGroup.filter((p) => !p.featured).map((p) => p.id);
         return {
