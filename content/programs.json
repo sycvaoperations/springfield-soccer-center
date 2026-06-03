@@ -15,6 +15,10 @@
       "status": "open",
       "visible": true,
       "featured": true,
+      "ageU3U4": false,
+      "ageU5U6": true,
+      "ageU7U12": true,
+      "ageU13U19": true,
       "order": 1,
       "details": {
         "tagline": "Six Weeks. Maximum Development.",
@@ -36,6 +40,10 @@
       "status": "open",
       "visible": true,
       "featured": true,
+      "ageU3U4": false,
+      "ageU5U6": true,
+      "ageU7U12": true,
+      "ageU13U19": false,
       "order": 2,
       "details": {
         "kicker": "Pro Development Program - Omid Namazi",
@@ -133,6 +141,10 @@
       "status": "open",
       "visible": true,
       "featured": false,
+      "ageU3U4": false,
+      "ageU5U6": true,
+      "ageU7U12": true,
+      "ageU13U19": false,
       "order": 5,
       "details": {
         "tagline": "From Recreation to Competition.",
@@ -253,6 +265,32 @@
       "details": {
         "tagline": "Touch. Pass. Think. Faster.",
         "body": "Everything in soccer starts with your first touch. This clinic builds the technical foundation that sets elite players apart.\n\n## Technical Curriculum\n\n- Clean first touch in all directions\n- Short and medium range passing\n- Combination play and wall passes\n- Speed of play under pressure\n- Receiving with body turned"
+      }
+    },
+    {
+      "id": "future-ballers",
+      "title": "Future Ballers",
+      "cat": "Ball Mastery",
+      "age": "U7-U8",
+      "banner": "assets/banners/015595ae-13dd-4730-b50e-2ac179f55aea-4.png",
+      "desc": "Build confidence on the ball through fun, creative activities and small-sided games that master essential technical skills like dribbling, passing, and 1v1 moves.",
+      "meta": [
+        "Sundays",
+        "10:00 AM -11:15 AM",
+        "7 Weeks",
+        "7/12 - 8/23"
+      ],
+      "status": "open",
+      "visible": true,
+      "featured": false,
+      "ageU3U4": false,
+      "ageU5U6": false,
+      "ageU7U12": true,
+      "ageU13U19": false,
+      "order": 11,
+      "details": {
+        "tagline": "Master the ball. Own the game.",
+        "body": "The perfect environment for young players to build confidence on the ball. Future Ballers is built around creativity, technical skill, and fun.\n\n## What to Expect\n\n- Ball mastery and 1v1 creativity\n- Engaging, age-appropriate skills and games\n- Development of coordination and balance\n- Building confidence through ball possession"
       }
     }
   ]
