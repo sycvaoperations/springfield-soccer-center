@@ -17,6 +17,10 @@
   "ageU5U6": false,
   "ageU7U12": false,
   "ageU13U19": false,
+  "identGettingStarted": true,
+  "identDeveloping": false,
+  "identCompetitive": false,
+  "identSpecialized": false,
   "order": 3,
   "details": {
     "tagline": "Their First Touch. Their First Love.",
