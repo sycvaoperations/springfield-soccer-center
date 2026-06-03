@@ -16,6 +16,10 @@
   "ageU5U6": true,
   "ageU7U12": true,
   "ageU13U19": false,
+  "identGettingStarted": false,
+  "identDeveloping": true,
+  "identCompetitive": false,
+  "identSpecialized": false,
   "order": 5,
   "details": {
     "tagline": "From Recreation to Competition.",
