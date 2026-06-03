@@ -15,7 +15,7 @@ content:
     type: collection
     path: content/programs
     format: json
-    filename: "{slug}"
+    filename: "{fields.id}.json"
     view:
       fields:
         - title
@@ -29,12 +29,13 @@ content:
         - title
     fields:
       - name: id
-        label: "Program ID (optional override)"
+        label: Program ID
         type: string
+        required: true
         pattern:
           regex: "^[a-z0-9-]+$"
           message: "Use lowercase letters, numbers, and hyphens only."
-        description: "Leave blank — auto-set from the Program Name. Only fill this in if you need to manually override the website key."
+        description: "Unique key for this program — use short lowercase words with hyphens e.g. spring-dribbling. Must be different for every program."
 
       - name: title
         label: Program Name
