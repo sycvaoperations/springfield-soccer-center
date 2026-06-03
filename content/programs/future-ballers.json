@@ -14,6 +14,10 @@
   "status": "open",
   "visible": true,
   "featured": false,
+  "ageU3U4": false,
+  "ageU5U6": false,
+  "ageU7U12": true,
+  "ageU13U19": false,
   "order": 11,
   "details": {
     "tagline": "Master the ball. Own the game.",
