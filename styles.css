@@ -1456,3 +1456,39 @@ body.modal-open { overflow: hidden; }
 
    /* ── Programs SEO index (crawlable fallback, hidden on screen) ── */
 .ssc-program-index { display: none !important; }
+
+
+/* ============================================================
+   PROGRAMS SEO INDEX
+   Crawlable fallback section — same titles/descriptions as the
+   interactive card grid. Hidden on desktop (card grid shows the
+   same content). Shown on mobile for crawlability.
+   Handles both the current class (.ssc-program-index) and the
+   legacy class (.ssc-programs-index / .ssc-prog).
+   ============================================================ */
+.ssc-program-index,
+.ssc-programs-index {
+  padding: 2.5rem 1rem;
+  background: var(--ink-2, #060b13);
+  color: var(--text, #fff);
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.ssc-program-index h2,
+.ssc-programs-index h2 { font-family: var(--font-display, 'Oswald', sans-serif); font-size: clamp(1.4rem, 4vw, 2rem); margin-bottom: 0.5rem; }
+.ssc-program-index > p,
+.ssc-programs-index > p { color: var(--muted, #9aa7b6); font-size: 0.9rem; margin-bottom: 1.5rem; max-width: 65ch; }
+.ssc-program-index-item,
+.ssc-prog { border-bottom: 1px solid rgba(255,255,255,.07); padding: 1.25rem 0; }
+.ssc-program-index-item:last-child,
+.ssc-prog:last-child { border-bottom: none; }
+.ssc-program-index-item h3,
+.ssc-prog h3 { font-family: var(--font-display, 'Oswald', sans-serif); font-size: 1.15rem; margin: 0 0 0.3rem; font-weight: 600; }
+.ssc-program-meta,
+.ssc-prog-meta { font-size: 0.8rem; color: var(--muted, #9aa7b6); margin: 0 0 0.5rem; }
+.ssc-program-status { color: var(--accent, #f26200); }
+.ssc-program-description,
+.ssc-prog > p:last-child { font-size: 0.875rem; color: var(--muted, #9aa7b6); margin: 0; line-height: 1.55; }
+@media (min-width: 768px) {
+  .ssc-program-index,
+  .ssc-programs-index { display: none !important; }
+}
