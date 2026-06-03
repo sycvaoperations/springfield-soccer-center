@@ -14,7 +14,6 @@ content:
     label: Programs
     type: collection
     path: content/programs
-    extension: json
     format: json
     filename: "{slug}"
     view:
