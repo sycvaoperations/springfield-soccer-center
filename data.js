@@ -19,6 +19,7 @@
                    /Notify Me button behavior
      visible   true / false  → hide a program without deleting it
      featured  true / false  → leads the "For You" row in the All tab
+     ageGroups string[]      → which age tabs to appear under
      order     number        → display order (low = first)
      details   (optional) rich lightbox content — tagline, facts, and a
                  markdown body. Editable in the CMS; programs without it
@@ -45,11 +46,9 @@ window.STATUS_META = {
 };
 
 /* ---- Age-group merchandising config -------------------------------
-   These map which programs surface under each age tab. They reference
-   program ids; hidden or deleted programs are filtered out
-   automatically when the catalog loads. The "all" tab is assembled
-   dynamically from the full catalog (featured programs first), so a
-   newly added program appears there with no config change. */
+   Defines the tab structure only. Program assignment is driven by
+   each program's ageGroups field in the CMS — no hardcoded IDs here.
+   The "all" tab is assembled dynamically from the full catalog. */
 const AGE_GROUPS_CONFIG = [
   {
     id: "all", label: "All Programs", sub: "Every Program", dynamic: true,
@@ -57,23 +56,19 @@ const AGE_GROUPS_CONFIG = [
   },
   {
     id: "u3-u4", label: "U3–U4", sub: "First Touches",
-    featured: ["little-boots"],
-    supplemental: { kind: "next", title: "What Comes Next", tag: "The Pathway", ids: ["pre-travel"] },
+    supplemental: { kind: "next", title: "What Comes Next", tag: "The Pathway" },
   },
   {
     id: "u5-u6", label: "U5–U6", sub: "Foundations",
-    featured: ["pre-travel", "summer-camps", "futsal"],
-    supplemental: { kind: "additional", title: "Additional Training", tag: "Also Available", ids: ["omid"] },
+    supplemental: { kind: "additional", title: "Additional Training", tag: "Also Available" },
   },
   {
     id: "u7-u12", label: "U7–U12", sub: "Development",
-    featured: ["summer-camps", "footskills", "omid", "futsal"],
-    supplemental: { kind: "elite", title: "Elite Supplemental Training", tag: "Advanced", ids: ["gk-brian", "scoring", "attacking-1v1", "first-touch"] },
+    supplemental: { kind: "elite", title: "Elite Supplemental Training", tag: "Advanced" },
   },
   {
     id: "u13-u19", label: "U13–U19", sub: "Elite",
-    featured: ["summer-camps", "omid"],
-    supplemental: { kind: "elite", title: "Elite Supplemental Training", tag: "Advanced", ids: ["footskills", "futsal", "gk-brian", "scoring", "attacking-1v1", "first-touch"] },
+    supplemental: { kind: "elite", title: "Elite Supplemental Training", tag: "Advanced" },
   },
 ];
 
@@ -123,7 +118,7 @@ window.CATALOG_READY = fetch("content/programs.json", { cache: "no-store" })
 
     const exists = (id) => Object.prototype.hasOwnProperty.call(PROGRAMS, id);
 
-    /* Build age groups, filtering ids down to visible programs. */
+    /* Build age groups dynamically from each program's ageGroups field. */
     window.AGE_GROUPS = AGE_GROUPS_CONFIG
       .map((g) => {
         if (g.dynamic) {
@@ -131,10 +126,15 @@ window.CATALOG_READY = fetch("content/programs.json", { cache: "no-store" })
           const rest = visible.filter((p) => !p.featured).map((p) => p.id);
           return { ...g, featured, supplemental: { ...g.supplemental, ids: rest } };
         }
+        const inGroup = visible.filter((p) =>
+          Array.isArray(p.ageGroups) && p.ageGroups.includes(g.id)
+        );
+        const featured = inGroup.filter((p) => p.featured).map((p) => p.id);
+        const supplemental = inGroup.filter((p) => !p.featured).map((p) => p.id);
         return {
           ...g,
-          featured: (g.featured || []).filter(exists),
-          supplemental: { ...g.supplemental, ids: (g.supplemental.ids || []).filter(exists) },
+          featured,
+          supplemental: { ...g.supplemental, ids: supplemental },
         };
       })
       .filter((g) => (g.featured && g.featured.length) || (g.supplemental.ids && g.supplemental.ids.length));
