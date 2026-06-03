@@ -287,6 +287,10 @@
       "ageU5U6": false,
       "ageU7U12": true,
       "ageU13U19": false,
+      "identGettingStarted": false,
+      "identDeveloping": true,
+      "identCompetitive": false,
+      "identSpecialized": false,
       "order": 11,
       "details": {
         "tagline": "Master the ball. Own the game.",
