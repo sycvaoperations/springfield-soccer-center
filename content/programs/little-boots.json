@@ -5,10 +5,18 @@
   "age": "U3-U4",
   "banner": "assets/banners/little-boots.png",
   "desc": "First touches, big smiles. A playful introduction to the ball that builds coordination and a love of the game.",
-  "meta": ["6 Weeks", "Saturday Mornings", "Parent & Player"],
+  "meta": [
+    "6 Weeks",
+    "Saturday Mornings",
+    "Parent & Player"
+  ],
   "status": "open",
   "visible": true,
-  "featured": true,
+  "featured": false,
+  "ageU3U4": true,
+  "ageU5U6": false,
+  "ageU7U12": false,
+  "ageU13U19": false,
   "order": 3,
   "details": {
     "tagline": "Their First Touch. Their First Love.",
