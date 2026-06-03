@@ -105,14 +105,22 @@ content:
         multiple: true
         options:
           values:
-            - label: "U3–U4"
-              value: u3-u4
-            - label: "U5–U6"
-              value: u5-u6
-            - label: "U7–U12"
-              value: u7-u12
-            - label: "U13–U19"
-              value: u13-u19
+            - name: ageU3U4
+              label: "Show in U3–U4"
+              type: boolean
+      
+            - name: ageU5U6
+              label: "Show in U5–U6"
+              type: boolean
+      
+            - name: ageU7U12
+              label: "Show in U7–U12"
+              type: boolean
+      
+            - name: ageU13U19
+              label: "Show in U13–U19"
+              type: boolean
+        
         description: "Select all age tabs this program should appear under. Leave blank to show in All Programs only."
 
       - name: order
