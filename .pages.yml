@@ -16,7 +16,7 @@ content:
     path: content/programs
     extension: json
     format: json
-    filename: "{fields.id}"
+    filename: "{slug}"
     view:
       fields:
         - title
@@ -30,13 +30,12 @@ content:
         - title
     fields:
       - name: id
-        label: "LOCKED: Program ID - do not edit"
+        label: "Program ID (optional override)"
         type: string
-        required: true
         pattern:
           regex: "^[a-z0-9-]+$"
           message: "Use lowercase letters, numbers, and hyphens only."
-        description: "DO NOT CHANGE. This is the permanent website key. Change the Program Name field instead."
+        description: "Leave blank — auto-set from the Program Name. Only fill this in if you need to manually override the website key."
 
       - name: title
         label: Program Name
@@ -141,4 +140,3 @@ content:
             label: Detail Copy
             type: text
             description: "Markdown supported. Use ## headings and - bullet lists."
-
