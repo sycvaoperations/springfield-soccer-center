@@ -2,7 +2,7 @@
   "programs": [
     {
       "id": "summer-camps",
-      "title": "Full-Day Summer Camps",
+      "title": "Summer Camps",
       "cat": "Camp",
       "age": "U5-U19",
       "banner": "assets/banners/summer-camps.png",
@@ -18,7 +18,7 @@
       "order": 1,
       "details": {
         "tagline": "Six Weeks. Maximum Development.",
-        "body": "Our flagship summer experience - a full day of elite soccer development in an energetic, competitive environment.\n\n## Daily Structure\n\n- Morning technical training sessions\n- Small-sided games and possession work\n- Afternoon competitions and scrimmages\n- Themed days and player challenges\n\n## Who Is This For?\n\nPlayers of all levels from U5 through U19. Groups are organized by age and ability to maximize the training environment."
+        "body": "Our flagship summer experience - a full day of elite soccer development in an energetic, competitive environment\n\n## Daily Structure\n\n- Morning technical training sessions\n- Small-sided games and possession work\n- Afternoon competitions and scrimmages\n- Themed days and player challenges\n\n## Who Is This For?\n\nPlayers of all levels from U5 through U19. Groups are organized by age and ability to maximize the training environment."
       }
     },
     {
