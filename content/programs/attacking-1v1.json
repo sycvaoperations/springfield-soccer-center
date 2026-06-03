@@ -5,10 +5,21 @@
   "age": "U9-U14",
   "banner": "assets/banners/attacking-1v1.png",
   "desc": "Beat your defender, own the moment. Develop the moves, speed, and bravery to take players on and win.",
-  "meta": ["5 Weeks", "Once a Week"],
+  "meta": [
+    "5 Weeks",
+    "Once a Week"
+  ],
   "status": "open",
   "visible": true,
   "featured": false,
+  "ageU3U4": false,
+  "ageU5U6": false,
+  "ageU7U12": true,
+  "ageU13U19": true,
+  "identGettingStarted": false,
+  "identDeveloping": true,
+  "identCompetitive": true,
+  "identSpecialized": true,
   "order": 9,
   "details": {
     "tagline": "Beat Your Defender. Every Time.",
