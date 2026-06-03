@@ -99,6 +99,22 @@ content:
         label: Featured Program
         type: boolean
 
+      - name: ageGroups
+        label: Age Groups
+        type: select
+        multiple: true
+        options:
+          values:
+            - label: "U3–U4"
+              value: u3-u4
+            - label: "U5–U6"
+              value: u5-u6
+            - label: "U7–U12"
+              value: u7-u12
+            - label: "U13–U19"
+              value: u13-u19
+        description: "Select all age tabs this program should appear under. Leave blank to show in All Programs only."
+
       - name: order
         label: Display Order
         type: number
