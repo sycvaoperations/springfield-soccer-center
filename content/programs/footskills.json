@@ -5,10 +5,17 @@
   "age": "U9-U14",
   "banner": "assets/banners/footskills.png",
   "desc": "Master the fundamentals of control and dribbling through high-repetition, ball-mastery training built for real-game confidence.",
-  "meta": ["8 Weeks", "Once a Week"],
+  "meta": [
+    "8 Weeks",
+    "Once a Week"
+  ],
   "status": "open",
   "visible": true,
   "featured": true,
+  "ageU3U4": false,
+  "ageU5U6": false,
+  "ageU7U12": true,
+  "ageU13U19": true,
   "order": 4,
   "details": {
     "tagline": "Master the Ball. Elevate Your Game.",
