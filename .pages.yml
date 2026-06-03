@@ -116,6 +116,22 @@ content:
         label: "Show in U13–U19"
         type: boolean
 
+      - name: identGettingStarted
+        label: "Show for Just Getting Started"
+        type: boolean
+
+      - name: identDeveloping
+        label: "Show for Developing Player"
+        type: boolean
+
+      - name: identCompetitive
+        label: "Show for Competitive Player"
+        type: boolean
+
+      - name: identSpecialized
+        label: "Show for Specialized Training"
+        type: boolean
+
       - name: order
         label: Display Order
         type: number
