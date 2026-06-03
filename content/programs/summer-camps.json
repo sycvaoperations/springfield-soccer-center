@@ -13,6 +13,10 @@
   "status": "open",
   "visible": true,
   "featured": true,
+  "ageU3U4": false,
+  "ageU5U6": true,
+  "ageU7U12": true,
+  "ageU13U19": true,
   "order": 1,
   "details": {
     "tagline": "Six Weeks. Maximum Development.",
