@@ -5,10 +5,17 @@
   "age": "U9-U14",
   "banner": "assets/banners/goalkeeper.png",
   "desc": "Elite goalkeeper training covering shot-stopping, positioning, distribution, and game scenarios-led by DC Power US National team coach Brian.",
-  "meta": ["4 Weeks", "Twice a Week"],
+  "meta": [
+    "4 Weeks",
+    "Twice a Week"
+  ],
   "status": "waitlist",
   "visible": true,
   "featured": false,
+  "ageU3U4": false,
+  "ageU5U6": false,
+  "ageU7U12": true,
+  "ageU13U19": true,
   "order": 7,
   "details": {
     "tagline": "Elite Hands. Elite Feet. Elite Mind.",
