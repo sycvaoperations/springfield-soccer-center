@@ -16,6 +16,10 @@
   "ageU5U6": false,
   "ageU7U12": true,
   "ageU13U19": true,
+  "identGettingStarted": false,
+  "identDeveloping": true,
+  "identCompetitive": true,
+  "identSpecialized": false,
   "order": 4,
   "details": {
     "tagline": "Master the Ball. Elevate Your Game.",
