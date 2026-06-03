@@ -23,6 +23,10 @@
      ageU5U6   true / false  → show in U5–U6 tab
      ageU7U12  true / false  → show in U7–U12 tab
      ageU13U19 true / false  → show in U13–U19 tab
+     identGettingStarted  true / false  → show for Just Getting Started
+     identDeveloping      true / false  → show for Developing Player
+     identCompetitive     true / false  → show for Competitive Player
+     identSpecialized     true / false  → show for Specialized Training
      order     number        → display order (low = first)
      details   (optional) rich lightbox content — tagline, facts, and a
                  markdown body. Editable in the CMS; programs without it
@@ -81,25 +85,25 @@ const IDENTITIES_CONFIG = [
     id: "getting-started", title: "Just Getting Started", tag: "Intro Soccer", range: "U3–U6",
     desc: "First touches, first games. Building coordination, confidence, and a love of the ball.",
     image: "assets/identity/getting-started.png",
-    programs: ["little-boots", "summer-camps"],
+    field: "identGettingStarted",
   },
   {
     id: "developing", title: "Developing Player", tag: "Development", range: "U5–U12",
     desc: "Building the technical foundation and habits to step up into competitive play.",
     image: "assets/identity/developing.png",
-    programs: ["summer-camps", "pre-travel", "omid", "footskills", "futsal", "first-touch"],
+    field: "identDeveloping",
   },
   {
     id: "competitive", title: "Competitive Player", tag: "Travel Ready", range: "U7–U19",
     desc: "Sharpening the technical, tactical, and physical tools that win games at the travel level.",
     image: "assets/identity/competitive.png",
-    programs: ["summer-camps", "pre-travel", "omid", "footskills", "futsal", "gk-brian", "scoring", "attacking-1v1", "first-touch"],
+    field: "identCompetitive",
   },
   {
     id: "specialized", title: "Specialized Training", tag: "Position & Skill", range: "U7–U19",
     desc: "Position-specific and skill-specific clinics for players chasing the next level.",
     image: "assets/identity/specialized.png",
-    programs: ["omid", "footskills", "futsal", "gk-brian", "scoring", "attacking-1v1", "first-touch"],
+    field: "identSpecialized",
   },
 ];
 
@@ -146,9 +150,12 @@ window.CATALOG_READY = fetch("content/programs.json", { cache: "no-store" })
       })
       .filter((g) => (g.featured && g.featured.length) || (g.supplemental.ids && g.supplemental.ids.length));
 
-    /* Build identities, filtering their program lists down to visible. */
+    /* Build identities dynamically from each program's identity boolean fields. */
     window.IDENTITIES = IDENTITIES_CONFIG
-      .map((idn) => ({ ...idn, programs: idn.programs.filter(exists) }))
+      .map((idn) => ({
+        ...idn,
+        programs: visible.filter((p) => !!p[idn.field]).map((p) => p.id),
+      }))
       .filter((idn) => idn.programs.length);
   })
   .catch((err) => {
