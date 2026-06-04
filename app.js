@@ -53,7 +53,9 @@
   const tabsEl = document.getElementById("ageTabs");
   const hintEl = document.getElementById("ageHint");
   const resultsEl = document.getElementById("finderResults");
-  const REGISTER_URL = "#register";
+  const DEFAULT_REGISTER_URL =
+  (document.getElementById("pmRegister") && document.getElementById("pmRegister").getAttribute("href")) ||
+  "#register";
 
   /* ---- Category accent + icon system (grouped into 6 type families) ---- */
   const SI = 'stroke="currentColor" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"';
@@ -492,8 +494,16 @@
       pmRegister.hidden = false;
       if (footNote) { footNote.hidden = false; if (sm.note) footNote.textContent = sm.note; }
       pmRegister.innerHTML = `${esc(sm.cta)} <span class="arr">&rarr;</span>`;
-      pmRegister.href = REGISTER_URL;
+      const registerUrl = p.registrationUrl || (p.details && p.details.registrationUrl) || DEFAULT_REGISTER_URL;
+      pmRegister.href = registerUrl;
+      if (registerUrl.startsWith("#")) {
+      pmRegister.removeAttribute("target");
+      pmRegister.removeAttribute("rel");
+    } else {
+      pmRegister.setAttribute("target", "_blank");
+      pmRegister.setAttribute("rel", "noopener noreferrer");
     }
+  }
 
     lastFocus = document.activeElement;
     modal.classList.add("open");
