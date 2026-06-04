@@ -968,7 +968,7 @@ section { position: relative; }
 .footer ul a { color: var(--muted); font-size: 14.5px; transition: color .2s var(--ease); }
 .footer ul a:hover { color: var(--accent); }
 .footer .partners { display: flex; flex-direction: column; gap: 16px; }
-.footer .partner-slot { height: 26px; width: 96px; filter: grayscale(1) brightness(0) invert(1); opacity: .5; transition: opacity .3s var(--ease); }
+.footer .partner-slot { filter: grayscale(1) brightness(0) invert(1); opacity: .5; transition: opacity .3s var(--ease); }
 .footer .partner-slot:hover { opacity: .95; }
 .foot-bottom { display: flex; justify-content: space-between; gap: 20px; margin-top: 56px; padding-top: 26px; border-top: 1px solid var(--line); flex-wrap: wrap; }
 .foot-bottom span { color: var(--muted-2); font-size: 12.5px; letter-spacing: 0.04em; }
@@ -1048,19 +1048,9 @@ section { position: relative; }
 }
 
 .footer .partner-slot {
-  width: 150px;
-  height: 54px;
+  width: 150px !important;
+  height: 54px !important;
   max-width: 100%;
-  border-radius: 10px;
-  border: 1px dashed rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.035);
-  display: block;
-}
-
-.footer .partner-slot img {
-  max-width: 82%;
-  max-height: 72%;
-  object-fit: contain;
 }
 /* ============================================================
    REVEAL ANIMATIONS
