@@ -1233,6 +1233,22 @@ body.nomotion .hero-fallback::before { animation: none; }
 .pm-foot-note[hidden] { display: none; }
 #pmRegister[hidden] { display: none !important; }
 
+.foot-address {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.foot-address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.foot-address a:hover {
+  color: var(--accent);
+}
+
 /* Notify / waitlist capture module (footer) */
 .pm-notify-wrap {
   display: flex; align-items: center; justify-content: space-between;
