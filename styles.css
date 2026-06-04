@@ -688,8 +688,16 @@ section { position: relative; }
 /* Hero card now lives inside the grid — spans the full row on desktop so the
    featured layout reads exactly as before (big card on top, grid beneath). */
 .card-grid.has-hero .pcard.is-hero { grid-column: 1 / -1; }
-/* the extra description is hero-only on desktop; revealed on every card on mobile */
-.pcard:not(.is-hero) .pcard-desc { display: none; }
+/* show short descriptions on every program card */
+.pcard:not(.is-hero) .pcard-desc {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+  margin-top: 11px;
+  flex: 1;
+  text-wrap: pretty;
+}
 
 /* swipe affordance — only shown on the mobile scroll lane */
 .swipe-hint { display: none; }
