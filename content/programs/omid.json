@@ -7,7 +7,7 @@
   "desc": "High-level, fast-paced training directed by Omid Namazi - technical mastery, tactical themes, and game-realistic reps in a professional environment.",
   "meta": [
     "8 Weeks",
-    "Tues, Wed, & Thur",
+    "Tue, Wed, Thu",
     "4:30 - 6:45 PM"
   ],
   "status": "open",
@@ -38,7 +38,11 @@
       },
       {
         "label": "Schedule",
-        "value": "Tues, Wed, & Thur - 4:30-6:45 PM"
+        "value": "Tue, Wed, Thu "
+      },
+      {
+        "label": "Time",
+        "value": " 4:30-6:45 PM"
       },
       {
         "label": "Age Groups",
