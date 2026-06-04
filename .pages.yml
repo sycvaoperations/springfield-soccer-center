@@ -91,7 +91,12 @@ content:
               label: Waitlist
             - name: coming-soon
               label: Coming Soon
-
+      
+      - name: registrationUrl
+        label: Custom Registration Link
+        type: string
+        description: "Optional. Add the direct registration link for this program. If blank, the site will use the default registration link."
+      
       - name: visible
         label: Show on Website
         type: boolean
