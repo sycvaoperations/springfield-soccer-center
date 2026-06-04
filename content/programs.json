@@ -33,25 +33,26 @@
       "id": "omid",
       "title": "Pro Development Program",
       "cat": "Pro Development",
-      "age": "U5-U19",
+      "age": "U12-U14",
       "banner": "assets/banners/omid.png",
       "desc": "High-level, fast-paced training directed by Omid Namazi - technical mastery, tactical themes, and game-realistic reps in a professional environment.",
       "meta": [
         "8 Weeks",
-        "Tue & Wed",
+        "Tue, Wed, Thu",
         "4:30 - 6:45 PM"
       ],
       "status": "open",
+      "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTc3MjQ5NnxuY3VrVGxjS0VMUWcxTFlwYitweUtJL2RuSnh0Q3BjYm4vYXhHVVI3MkJvPQ==&program_id=107325",
       "visible": true,
       "featured": true,
       "ageU3U4": false,
-      "ageU5U6": true,
+      "ageU5U6": false,
       "ageU7U12": true,
-      "ageU13U19": false,
+      "ageU13U19": true,
       "identGettingStarted": false,
       "identDeveloping": true,
       "identCompetitive": true,
-      "identSpecialized": false,
+      "identSpecialized": true,
       "order": 2,
       "details": {
         "kicker": "Pro Development Program - Omid Namazi",
@@ -68,11 +69,15 @@
           },
           {
             "label": "Schedule",
-            "value": "Tue & Wed - 4:30-6:45 PM"
+            "value": "Tue, Wed, Thu "
+          },
+          {
+            "label": "Time",
+            "value": " 4:30-6:45 PM"
           },
           {
             "label": "Age Groups",
-            "value": "U5-U19"
+            "value": "U12-U14"
           },
           {
             "label": "Director",
