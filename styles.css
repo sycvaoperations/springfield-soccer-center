@@ -1005,25 +1005,62 @@ section { position: relative; }
 }
 
 .footer .partner-inquire {
-  margin: 6px 0 16px;
-  max-width: 240px;
+  margin: 8px 0 14px;
+  max-width: 230px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13.5px;
   line-height: 1.45;
 }
 
 .footer .partner-inquire a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--muted);
   text-decoration: none;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  transition: color .2s ease, transform .2s ease;
+}
+
+.footer .partner-inquire a::after {
+  content: "→";
+  color: var(--accent);
+  font-size: 14px;
+  line-height: 1;
+  transform: translateY(-1px);
 }
 
 .footer .partner-inquire a:hover {
-  color: var(--accent);
+  color: #fff;
+  transform: translateX(2px);
 }
 
 .footer .partners {
-  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+  width: 100%;
+}
+
+.footer .partner-slot {
+  width: 150px;
+  height: 54px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px dashed rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.035);
+  display: block;
+}
+
+.footer .partner-slot img {
+  max-width: 82%;
+  max-height: 72%;
+  object-fit: contain;
 }
 /* ============================================================
    REVEAL ANIMATIONS
