@@ -122,7 +122,7 @@
           <div class="pcard-main">
             <div class="pcat">${p.cat}</div>
             <h3>${p.title}</h3>
-            <p>${p.desc}</p>
+            <p class="pcard-desc">${p.desc}</p>
             <div class="meta">${metaRow(p)}</div>
             <span class="pcard-cta">View Details <span class="arr">&rarr;</span></span>
           </div>
