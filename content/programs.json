@@ -231,16 +231,18 @@
     },
     {
       "id": "scoring",
-      "title": "Art of Scoring Goals",
+      "title": "Art of Scoring Goals + Strength & Performance Training",
       "cat": "Finishing",
-      "age": "U9-U14",
+      "age": "U10-U16",
       "banner": "assets/banners/scoring.png",
-      "desc": "Finishing, movement, and the instinct to be in the right place. Turn chances into goals under pressure.",
+      "desc": "Build strength, speed, and power while sharpening finishing, movement, and confidence in front of goal.",
       "meta": [
-        "5 Weeks",
-        "Once a Week"
+        "8 Weeks",
+        "Mon, Tues",
+        "7:00 - 8:15 PM"
       ],
       "status": "open",
+      "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTgxMzI2OXxVZlBpbC85ZGcxVmhMKzVDV2grMjlWcXRYVmZUcElRZmk5NHMyNmtSWjIwPQ==&program_id=108195",
       "visible": true,
       "featured": false,
       "ageU3U4": false,
