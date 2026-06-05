@@ -155,7 +155,7 @@
         "Once a Week"
       ],
       "status": "open",
-      "visible": true,
+      "visible": false,
       "featured": true,
       "ageU3U4": false,
       "ageU5U6": false,
@@ -420,7 +420,7 @@
         "Once a Week"
       ],
       "status": "open",
-      "visible": true,
+      "visible": false,
       "featured": false,
       "ageU3U4": false,
       "ageU5U6": false,
@@ -444,9 +444,9 @@
       "banner": "assets/banners/little-boots-2.png",
       "desc": "Master essential skills like dribbling, passing, ball mastery, and 1v1 moves through fun activities and small-sided games.",
       "meta": [
-        "Sundays",
-        "10:00 AM -11:15 AM",
         "8 Weeks",
+        "Sun",
+        "10:00 AM -11:15 AM",
         "7/12 - 8/30"
       ],
       "status": "open",
