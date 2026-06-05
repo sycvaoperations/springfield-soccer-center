@@ -1,24 +1,48 @@
 {
-  "id": "futsal",
-  "title": "Futsal Clinic",
-  "cat": "Small-Sided",
-  "age": "U5-U14",
+  "id": "midfield-mastery",
+  "title": "Midfield Mastery & Sports Training",
+  "cat": "Technical",
+  "age": "U10-U14",
   "banner": "assets/banners/futsal.png",
-  "desc": "Fast feet, tight spaces, sharper decisions. The small-sided game that forges close control and quick thinking.",
+  "desc": "Designed for players looking to improve their effectiveness in possession and movement. Combines technical development with performance training.",
   "meta": [
-    "6 Weeks",
-    "Friday Nights"
+    "8 Weeks",
+    "Sun",
+    "11:30 AM - 1:45 PM"
   ],
-  "status": "coming-soon",
+  "status": "open",
+  "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTg1NTYyNHxJOWkxZXBsN1gwaUYwaVR5NTYyVXMvelRyOGJESjl0dXhKVkpRMDl3OWJZPQ==&program_id=108616",
   "visible": true,
   "featured": false,
   "ageU3U4": false,
-  "ageU5U6": true,
+  "ageU5U6": false,
   "ageU7U12": true,
   "ageU13U19": true,
+  "identGettingStarted": false,
+  "identDeveloping": false,
+  "identCompetitive": false,
+  "identSpecialized": false,
   "order": 6,
   "details": {
     "tagline": "Small Space. Big Development.",
-    "body": "Futsal is one of the most effective technical development tools in the game. Fast, tight, and demanding - every touch counts.\n\n## Why Futsal?\n\n- Up to 6x more touches per session vs. outdoor soccer\n- Forces quick decision-making under pressure\n- Builds creativity and close control\n- Used by elite programs worldwide"
+    "facts": [
+      {
+        "label": "Dates",
+        "value": "7/12 - 8/30"
+      },
+      {
+        "label": "Days",
+        "value": "Sun"
+      },
+      {
+        "label": "Time",
+        "value": "11:30 AM - 1:45 PM"
+      },
+      {
+        "label": "Age Groups",
+        "value": "U10-U14"
+      }
+    ],
+    "body": "This dynamic training program blends technical development and athletic performance training, helping players improve their first touch, decision-making, passing, and movement at game speed.\n\n## Why Midfield Mastery?\n\n-Develops first touch, ball control, and decision-making under pressure\n-Improves passing, combination play, and overall awareness in possession\n-Enhances speed, agility, coordination, and change of direction\n-Builds balance, body control, reaction speed, and explosiveness\n-Helps players execute technical skills more effectively at game speed"
   }
 }
