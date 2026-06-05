@@ -6,9 +6,12 @@
   "banner": "assets/banners/goalkeeper.png",
   "desc": "Elite goalkeeper training covering shot-stopping, positioning, distribution, and game scenarios-led by DC Power US National team coach Brian.",
   "meta": [
-    "8 weeks"
+    "8 weeks",
+    "Mon, Wed",
+    "4:30 - 7:00 PM",
+    "7:00 - 9:30 PM"
   ],
-  "status": "coming-soon",
+  "status": "open",
   "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTc3MjQ5NnxuY3VrVGxjS0VMUWcxTFlwYitweUtJL2RuSnh0Q3BjYm4vYXhHVVI3MkJvPQ==&program_id=108165",
   "visible": true,
   "featured": false,
@@ -23,6 +26,32 @@
   "order": 7,
   "details": {
     "tagline": "Elite Hands. Elite Feet. Elite Mind.",
+    "facts": [
+      {
+        "label": "Format",
+        "value": "8-Week GK Clinic"
+      },
+      {
+        "label": "Dates",
+        "value": "7/6 - 8/26"
+      },
+      {
+        "label": "Days",
+        "value": "Mon, Wed"
+      },
+      {
+        "label": "Time",
+        "value": "4:30 - 7:00 PM / 7:00 - 9:30 PM"
+      },
+      {
+        "label": "Age Groups",
+        "value": "U10-U16"
+      },
+      {
+        "label": "Director",
+        "value": "Brian Permian"
+      }
+    ],
     "body": "Position-specific goalkeeper training led by an elite-level coaching staff. Built for goalkeepers who are serious about their craft.\n\n## Technical Curriculum\n\n- Shot-stopping mechanics and footwork\n- Distribution - kicks, throws, and short passing\n- Positioning and angles\n- High ball and cross handling\n- Game scenario decision-making"
   }
 }
