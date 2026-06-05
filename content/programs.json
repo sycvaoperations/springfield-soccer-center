@@ -95,20 +95,20 @@
       "id": "little-boots",
       "title": "Little Boots",
       "cat": "Foundations",
-      "age": "U3-U4",
+      "age": "U3-U5",
       "banner": "assets/banners/e2225e79-1df4-41ff-bb1a-e9faa678ec79-1.png",
       "desc": "First touches, big smiles. A playful introduction to the ball that builds coordination and a love of the game.",
       "meta": [
         "6 Weeks",
         "Saturday Mornings",
-        "Parent & Player"
+        "9:00 - 9:45 AM"
       ],
       "status": "open",
-      "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTYxMjcwMHxjTnpRTlJwcmRndERJTnR0aDRFMlNvV3FtQXlkM29sclBxWkdFcXFOcUZVPQ==&program_id=108379",
+      "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTg1NTYyNHxJOWkxZXBsN1gwaUYwaVR5NTYyVXMvelRyOGJESjl0dXhKVkpRMDl3OWJZPQ==&program_id=108379",
       "visible": true,
-      "featured": false,
+      "featured": true,
       "ageU3U4": true,
-      "ageU5U6": false,
+      "ageU5U6": true,
       "ageU7U12": false,
       "ageU13U19": false,
       "identGettingStarted": true,
@@ -118,6 +118,28 @@
       "order": 3,
       "details": {
         "tagline": "Their First Touch. Their First Love.",
+        "facts": [
+          {
+            "label": "Format",
+            "value": "6-Weeks"
+          },
+          {
+            "label": "Dates",
+            "value": "7/11 - 8/15"
+          },
+          {
+            "label": "Days",
+            "value": "Saturday"
+          },
+          {
+            "label": "Time",
+            "value": "9:00 - 9:45 AM"
+          },
+          {
+            "label": "Age Groups",
+            "value": "U3-U5"
+          }
+        ],
         "body": "The perfect first soccer experience for your youngest player. Little Boots is built around play, movement, and fun.\n\n## What to Expect\n\n- Ball familiarity and basic motor skills\n- Age-appropriate games and activities\n- Positive coaching in a fun environment\n- Building confidence through movement"
       }
     },
