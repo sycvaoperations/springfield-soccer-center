@@ -4,7 +4,7 @@
   "cat": "Ball Mastery",
   "age": "U7-U8",
   "banner": "assets/banners/little-boots-2.png",
-  "desc": "Master essential skills like dribbling, passing, and 1v1 moves through fun, creative activities and small-sided games.",
+  "desc": "Master essential skills like dribbling, passing, ball mastery, and 1v1 moves through fun activities and small-sided games.",
   "meta": [
     "Sundays",
     "10:00 AM -11:15 AM",
@@ -12,6 +12,7 @@
     "7/12 - 8/23"
   ],
   "status": "open",
+  "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTg1NTYyNHxJOWkxZXBsN1gwaUYwaVR5NTYyVXMvelRyOGJESjl0dXhKVkpRMDl3OWJZPQ==&program_id=108414",
   "visible": true,
   "featured": false,
   "ageU3U4": false,
@@ -25,6 +26,24 @@
   "order": 11,
   "details": {
     "tagline": "Master the ball. Own the game.",
+    "facts": [
+      {
+        "label": "Dates",
+        "value": "7/12 - 8/30"
+      },
+      {
+        "label": "Days",
+        "value": "Sun"
+      },
+      {
+        "label": "Time",
+        "value": "10:00 - 11:15 AM"
+      },
+      {
+        "label": "Age Groups ",
+        "value": "U7-U8"
+      }
+    ],
     "body": "The perfect environment for young players to build confidence on the ball. Future Ballers is built around creativity, technical skill, and fun.\n\n## What to Expect\n\n- Ball mastery and 1v1 creativity\n- Engaging, age-appropriate skills and games\n- Development of coordination and balance\n- Building confidence through ball possession"
   }
 }
