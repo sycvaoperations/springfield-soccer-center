@@ -255,7 +255,29 @@
       "identSpecialized": true,
       "order": 8,
       "details": {
-        "tagline": "Clinical. Creative. Relentless.",
+        "tagline": "Sharpen Skills. Build Strength. Score More",
+        "facts": [
+          {
+            "label": "Dates",
+            "value": "7/6 - 8/25"
+          },
+          {
+            "label": "Days",
+            "value": "Mon, Tue"
+          },
+          {
+            "label": "Time",
+            "value": "7:00 - 8:15 PM"
+          },
+          {
+            "label": "Age Groups",
+            "value": "U10-U16"
+          },
+          {
+            "label": "Coaches",
+            "value": "Eddie Lima, Ahmad Sasso, Pablo Amaya"
+          }
+        ],
         "body": "Goals win games. This clinic is dedicated entirely to the craft of finishing - the movement, the composure, the creativity.\n\n## What You Will Work On\n\n- Off-ball movement and attacking runs\n- Composure and technique under pressure\n- First-time finishing - volleys, headers, rebounds\n- Clinical 1v1 situations\n- Pattern play leading to goal"
       }
     },
