@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Springfield Soccer Center</title>
+<meta name="description" content="Privacy Policy for Springfield Soccer Center at www.springfieldsoccercenter.com. Learn how we collect, use, and protect your personal information." />
+<link rel="canonical" href="https://www.springfieldsoccercenter.com/privacy-policy.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="assets/ssc-shield.png" />
+<style>
+  :root {
+    --ink:           #0a1422;
+    --ink-2:         #060b13;
+    --card:          #0b1119;
+    --card-hi:       #111a26;
+    --card-border:   rgba(255,255,255,0.09);
+    --card-border-2: rgba(255,255,255,0.16);
+    --accent:        #f26200;
+    --accent-bright: #ff7d1f;
+    --accent-deep:   #c44e00;
+    --text:          #ffffff;
+    --muted:         #9aa7b6;
+    --muted-2:       #6c7886;
+    --font-display:  'Oswald', system-ui, sans-serif;
+    --font-body:     'Inter', system-ui, sans-serif;
+    --maxw:          1180px;
+    --ease:          cubic-bezier(.22,.61,.36,1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: var(--accent-deep) var(--ink-2); }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--ink-2); }
+  ::-webkit-scrollbar-thumb { background: linear-gradient(var(--accent-deep), var(--accent)); border: 3px solid var(--ink-2); border-radius: 10px; background-clip: content-box; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--ink);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  /* film grain */
+  body::after {
+    content: "";
+    position: fixed; inset: 0; z-index: 9000;
+    pointer-events: none; opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 40px; }
+
+  /* ── NAV ── */
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,20,34,0.88);
+    backdrop-filter: blur(18px) saturate(1.4);
+    border-bottom: 1px solid var(--card-border);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand .shield { width: 34px; height: auto; }
+  .brand .wordmark { height: 22px; width: auto; }
+  .nav-links { display: flex; align-items: center; gap: 28px; }
+  .nav-links a {
+    font-family: var(--font-display); font-weight: 600; font-size: 13px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+    transition: color .2s var(--ease);
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links .nav-cta {
+    background: var(--accent); color: #fff; padding: 9px 20px; border-radius: 6px;
+    transition: background .2s var(--ease);
+  }
+  .nav-links .nav-cta:hover { background: var(--accent-bright); color: #fff; }
+
+  /* ── PAGE HEADER ── */
+  .page-header {
+    background: linear-gradient(135deg, #0d1f34 0%, var(--ink-2) 60%, #0a1218 100%);
+    border-bottom: 1px solid var(--card-border);
+    padding: 72px 0 64px;
+    position: relative; overflow: hidden;
+  }
+  .page-header::before {
+    content: "";
+    position: absolute; bottom: -60px; right: -80px;
+    width: 500px; height: 500px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(242,98,0,0.12), transparent 65%);
+    pointer-events: none;
+  }
+  .page-header .eyebrow {
+    font-family: var(--font-display); font-weight: 700; font-size: 12px;
+    letter-spacing: 0.32em; text-transform: uppercase; color: var(--accent);
+    display: block; margin-bottom: 14px;
+  }
+  .page-header h1 {
+    font-family: var(--font-display); font-weight: 700; font-size: clamp(36px,5vw,60px);
+    text-transform: uppercase; letter-spacing: -0.01em; line-height: 1;
+    color: var(--text); position: relative;
+  }
+  .page-header h1 span { color: var(--accent); }
+  .page-header .sub {
+    color: var(--muted); font-size: 16px; margin-top: 18px; max-width: 56ch; line-height: 1.6;
+    position: relative;
+  }
+  .meta-row {
+    display: flex; gap: 24px; margin-top: 28px; flex-wrap: wrap;
+  }
+  .meta-pill {
+    display: flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,0.06); border: 1px solid var(--card-border-2);
+    border-radius: 30px; padding: 7px 16px;
+    font-size: 13px; color: var(--muted); font-family: var(--font-body);
+  }
+  .meta-pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+
+  /* ── LAYOUT ── */
+  .layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 0;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    align-items: flex-start;
+    padding: 0 40px;
+  }
+
+  /* ── TOC ── */
+  .toc {
+    position: sticky; top: 68px; height: calc(100vh - 68px);
+    overflow-y: auto; padding: 36px 28px 36px 0;
+    scrollbar-width: none;
+    border-right: 1px solid var(--card-border);
+  }
+  .toc::-webkit-scrollbar { display: none; }
+  .toc-title {
+    font-family: var(--font-display); font-size: 10px; font-weight: 700;
+    letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted-2);
+    margin-bottom: 14px; padding-left: 14px;
+  }
+  .toc a {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 14px; border-radius: 7px;
+    font-size: 13px; color: var(--muted); font-weight: 400;
+    transition: all .15s var(--ease);
+    border-left: 2px solid transparent;
+  }
+  .toc a:hover { color: var(--text); background: rgba(255,255,255,0.05); }
+  .toc a.active { color: var(--accent); border-left-color: var(--accent); background: rgba(242,98,0,0.06); font-weight: 500; }
+  .toc .num { font-family: var(--font-display); font-size: 11px; color: var(--muted-2); font-weight: 600; width: 20px; flex-shrink: 0; }
+  .toc-sep { height: 1px; background: var(--card-border); margin: 12px 14px; }
+
+  /* ── MAIN CONTENT ── */
+  .doc { padding: 48px 0 100px 56px; min-width: 0; }
+
+  .sec { scroll-margin-top: 88px; margin-bottom: 56px; }
+  .sec:last-child { margin-bottom: 0; }
+
+  .sec-header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--card-border); }
+  .sec-num {
+    width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+    display: grid; place-items: center;
+    background: rgba(242,98,0,0.12); border: 1px solid rgba(242,98,0,0.25);
+    font-family: var(--font-display); font-weight: 700; font-size: 14px; color: var(--accent);
+  }
+  .sec-title { font-family: var(--font-display); font-size: 22px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text); }
+
+  p { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 16px; }
+  p:last-child { margin-bottom: 0; }
+  p strong { color: var(--text); font-weight: 600; }
+
+  /* ── CARDS ── */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card:last-child { margin-bottom: 0; }
+  .card-title {
+    font-family: var(--font-display); font-weight: 600; font-size: 14px;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--text);
+    margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+  }
+  .card-title .icon {
+    width: 28px; height: 28px; border-radius: 7px; flex-shrink: 0;
+    display: grid; place-items: center;
+    background: rgba(242,98,0,0.1); color: var(--accent);
+  }
+  .card-title .icon svg { width: 14px; height: 14px; }
+
+  .data-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .data-list li {
+    display: flex; gap: 12px; align-items: flex-start;
+    font-size: 14px; color: var(--muted); line-height: 1.55;
+  }
+  .data-list li::before {
+    content: ""; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--accent); flex-shrink: 0; margin-top: 7px;
+  }
+  .data-list li strong { color: var(--text); font-weight: 500; }
+  .data-list li code {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-size: 12px; background: rgba(255,255,255,0.07);
+    border: 1px solid var(--card-border-2); border-radius: 4px;
+    padding: 1px 6px; color: #c0cfe0;
+  }
+
+  .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  /* ── CALLOUT ── */
+  .callout {
+    display: flex; gap: 16px; align-items: flex-start;
+    background: rgba(242,98,0,0.07);
+    border: 1px solid rgba(242,98,0,0.2);
+    border-radius: 12px; padding: 20px 22px; margin: 20px 0;
+  }
+  .callout-icon {
+    width: 36px; height: 36px; border-radius: 9px; flex-shrink: 0;
+    background: rgba(242,98,0,0.15); display: grid; place-items: center; color: var(--accent);
+  }
+  .callout-icon svg { width: 18px; height: 18px; }
+  .callout-body { flex: 1; min-width: 0; }
+  .callout-body strong { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 5px; }
+  .callout-body p { font-size: 13.5px; color: var(--muted); margin: 0; line-height: 1.6; }
+
+  .callout.info {
+    background: rgba(27,154,170,0.07);
+    border-color: rgba(27,154,170,0.22);
+  }
+  .callout.info .callout-icon { background: rgba(27,154,170,0.15); color: #1B9AAA; }
+
+  /* ── TABLE ── */
+  .table-wrap { border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); margin: 16px 0; }
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    background: rgba(255,255,255,0.05); padding: 12px 16px;
+    font-family: var(--font-display); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted-2);
+    text-align: left; border-bottom: 1px solid var(--card-border);
+  }
+  tbody td { padding: 13px 16px; font-size: 13.5px; color: var(--muted); border-bottom: 1px solid var(--card-border); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: rgba(255,255,255,0.03); }
+  tbody td:first-child { color: var(--text); font-weight: 500; }
+  .chip {
+    display: inline-block; font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px;
+    border-radius: 20px; white-space: nowrap;
+  }
+  .chip-orange { background: rgba(242,98,0,0.15); color: var(--accent); border: 1px solid rgba(242,98,0,0.3); }
+  .chip-blue   { background: rgba(27,154,170,0.12); color: #4ecad8; border: 1px solid rgba(27,154,170,0.3); }
+  .chip-gray   { background: rgba(255,255,255,0.07); color: var(--muted); border: 1px solid var(--card-border-2); }
+
+  /* ── INLINE LINK ── */
+  .link { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .link:hover { color: var(--accent-bright); }
+
+  /* ── DISCLAIMER BANNER ── */
+  .disclaimer {
+    background: rgba(255,255,255,0.04); border: 1px solid var(--card-border-2);
+    border-radius: 12px; padding: 20px 24px; margin-bottom: 48px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .disclaimer-icon { color: var(--muted-2); flex-shrink: 0; margin-top: 1px; }
+  .disclaimer-icon svg { width: 18px; height: 18px; }
+  .disclaimer p { font-size: 13.5px; color: var(--muted-2); margin: 0; }
+  .disclaimer strong { color: var(--muted); }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--ink-2);
+    border-top: 1px solid var(--card-border);
+    padding: 52px 0 36px;
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+    margin-bottom: 40px;
+  }
+  .foot-brand p { color: var(--muted-2); font-size: 13.5px; line-height: 1.65; margin-top: 16px; max-width: 36ch; }
+  .foot-wordmark { height: 28px; width: auto; margin-bottom: 0; }
+  .footer h6 {
+    font-family: var(--font-display); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted-2); margin-bottom: 16px;
+  }
+  .footer ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer ul li a { font-size: 14px; color: var(--muted); transition: color .2s var(--ease); }
+  .footer ul li a:hover { color: var(--accent); }
+  .foot-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 24px; border-top: 1px solid var(--card-border);
+    font-size: 12.5px; color: var(--muted-2); flex-wrap: wrap; gap: 10px;
+  }
+  .foot-bottom a { color: var(--accent); }
+  .foot-bottom a:hover { color: var(--accent-bright); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 980px) {
+    .layout { grid-template-columns: 1fr; padding: 0 24px; }
+    .toc { display: none; }
+    .doc { padding: 40px 0 80px; }
+    .cards-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 620px) {
+    .wrap { padding: 0 20px; }
+    .page-header { padding: 50px 0 44px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .foot-bottom { flex-direction: column; text-align: center; }
+    .meta-row { gap: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand">
+      <img class="shield" src="assets/ssc-shield.png" alt="" />
+      <img class="wordmark" src="assets/ssc-wordmark.png" alt="Springfield Soccer Center" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#programs">Programs</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#rentals">Rentals</a>
+      <a href="index.html#register" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── PAGE HEADER ── -->
+<div class="page-header">
+  <div class="wrap">
+    <span class="eyebrow">Legal</span>
+    <h1>Privacy <span>Policy</span></h1>
+    <p class="sub">How Springfield Soccer Center collects, uses, and protects information on this website. Written in plain English.</p>
+    <div class="meta-row">
+      <div class="meta-pill"><span class="dot"></span>Effective June 2026</div>
+      <div class="meta-pill"><span class="dot"></span>www.springfieldsoccercenter.com</div>
+      <div class="meta-pill"><span class="dot"></span>Applies to: Parents &amp; Guardians</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── BODY LAYOUT ── -->
+<div class="layout">
+
+  <!-- TOC -->
+  <aside class="toc" aria-label="Page navigation">
+    <div class="toc-title">Contents</div>
+    <a href="#intro" class="toc-link"><span class="num">01</span>Introduction</a>
+    <a href="#what-we-collect" class="toc-link"><span class="num">02</span>What We Collect</a>
+    <a href="#third-parties" class="toc-link"><span class="num">03</span>Third-Party Services</a>
+    <a href="#cookies" class="toc-link"><span class="num">04</span>Cookies</a>
+    <a href="#children" class="toc-link"><span class="num">05</span>Children's Privacy</a>
+    <a href="#how-we-use" class="toc-link"><span class="num">06</span>How We Use Information</a>
+    <a href="#retention" class="toc-link"><span class="num">07</span>Data Retention</a>
+    <a href="#rights" class="toc-link"><span class="num">08</span>Your Rights</a>
+    <a href="#contact" class="toc-link"><span class="num">09</span>Contact Us</a>
+    <div class="toc-sep"></div>
+    <a href="index.html" class="toc-link" style="font-size:12px">← Back to Site</a>
+  </aside>
+
+  <!-- MAIN DOC -->
+  <main class="doc">
+
+    <!-- ── 01 INTRODUCTION ── -->
+    <section class="sec" id="intro">
+      <div class="sec-header">
+        <div class="sec-num">01</div>
+        <h2 class="sec-title">Introduction</h2>
+      </div>
+
+      <p>Springfield Soccer Center ("<strong>SSC</strong>," "we," "us," or "our") operates the website at <a class="link" href="https://www.springfieldsoccercenter.com" target="_blank" rel="noopener">www.springfieldsoccercenter.com</a>. This Privacy Policy explains what information we collect when you visit our site, how we use it, who we share it with, and what choices you have.</p>
+
+      <p>This policy is effective as of <strong>June 2026</strong>. We may update it from time to time — if we make material changes, we'll update the effective date at the top of this page.</p>
+
+      <div class="callout">
+        <div class="callout-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="callout-body">
+          <strong>Who this site is for</strong>
+          <p>This website is designed for <strong>parents, guardians, and coaches</strong> of young athletes. It is not directed at children under 13. If you are a minor, please ask a parent or guardian to use this site on your behalf.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 02 WHAT WE COLLECT ── -->
+    <section class="sec" id="what-we-collect">
+      <div class="sec-header">
+        <div class="sec-num">02</div>
+        <h2 class="sec-title">Information We Collect</h2>
+      </div>
+
+      <p>We collect two types of information: information you give us directly by filling out a form, and information that is collected automatically when you browse the site.</p>
+
+      <!-- 2a: What you provide -->
+      <div class="card" style="margin-top: 8px;">
+        <div class="card-title">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          Information You Provide
+        </div>
+        <p style="font-size:14px; margin-bottom: 16px;">When you contact us or sign up for program notifications, you give us personal information directly. Here's exactly what each form collects:</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Form</th>
+                <th>Data Collected</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Contact Form</td>
+                <td>First name, last name, email address, phone number, player age group, topic of interest, free-text message</td>
+                <td>Respond to your inquiry</td>
+              </tr>
+              <tr>
+                <td>Waitlist / Notify Me</td>
+                <td>Email address, program name, request type</td>
+                <td>Notify you when a program opens for registration</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="font-size:13.5px; margin-top:14px;">Both forms are processed by <strong>Web3Forms</strong> (a third-party form service) and the submitted data is delivered directly to our team inbox. We do not store your form data on our website's server.</p>
+      </div>
+
+      <!-- 2b: Automatically collected -->
+      <div class="card">
+        <div class="card-title">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+          </div>
+          Information Collected Automatically
+        </div>
+        <p style="font-size:14px; margin-bottom: 16px;">When you visit our site, certain information is collected automatically through <strong>Google Analytics 4 (GA4)</strong>, loaded via <strong>Google Tag Manager</strong> (container ID: <code>GTM-WQ68LRQ2</code>). This helps us understand how visitors use the site so we can improve it.</p>
+
+        <ul class="data-list">
+          <li><strong>Device &amp; technical info:</strong> IP address, device type, operating system, browser type and version</li>
+          <li><strong>Session data:</strong> Session ID, pages visited, time on page, scroll depth</li>
+          <li><strong>Behavioral events:</strong> Button clicks, video plays, scroll events</li>
+          <li><strong>Program finder interactions:</strong> Age group selected, player identity chosen, programs viewed, "Register Now" clicks</li>
+          <li><strong>Cookies:</strong> <code>_ga</code> and <code>_ga_*</code> persistent cookies (2-year expiry) are set to distinguish unique visitors across sessions</li>
+        </ul>
+
+        <div class="callout info" style="margin-top: 18px; margin-bottom: 0;">
+          <div class="callout-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg></div>
+          <div class="callout-body">
+            <strong>IP address anonymization</strong>
+            <p>Google Analytics automatically truncates the last octet of your IP address before storing it, which means the full IP address is never retained by Google's analytics systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 03 THIRD-PARTY SERVICES ── -->
+    <section class="sec" id="third-parties">
+      <div class="sec-header">
+        <div class="sec-num">03</div>
+        <h2 class="sec-title">Third-Party Services</h2>
+      </div>
+
+      <p>We work with three third-party services that handle data in connection with this website. Each operates under its own privacy policy, and we encourage you to review those policies.</p>
+
+      <div class="cards-grid">
+        <div class="card" style="margin-bottom:0;">
+          <div class="card-title">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+            Google Analytics &amp; GTM
+          </div>
+          <ul class="data-list">
+            <li>Collects behavioral and technical data as described above</li>
+            <li>Data is stored on <strong>Google's servers in the United States</strong></li>
+            <li>Used solely for site analytics — we have not enabled advertising features</li>
+            <li><a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy →</a></li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-bottom:0;">
+          <div class="card-title">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            Web3Forms
+          </div>
+          <ul class="data-list">
+            <li>Receives contact and waitlist form submissions on our behalf</li>
+            <li>Forwards completed submissions to our <strong>SSC team inbox</strong></li>
+            <li>Data is not used for any third-party marketing purpose</li>
+            <li><a class="link" href="https://web3forms.com/privacy" target="_blank" rel="noopener">Web3Forms Privacy Policy →</a></li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-bottom:0; grid-column: 1 / -1;">
+          <div class="card-title">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            PlayMetrics — External Registration
+          </div>
+          <p style="font-size:14px; margin-bottom:12px;">When you click a "Register Now" link on our site, you are taken to <strong>PlayMetrics</strong> — an independent registration platform. At that point, you leave our website and enter PlayMetrics' environment. Any information you provide during registration (including payment details) is collected and governed by <strong>PlayMetrics' own privacy policy</strong>, not this one.</p>
+          <p style="font-size:14px; margin: 0;">We have no control over PlayMetrics' data practices. We encourage you to review their privacy policy before completing registration.</p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top: 20px;">
+        <div class="callout-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="callout-body">
+          <strong>We never sell your data</strong>
+          <p>We do not sell, rent, or trade your personal information to any third party for their own marketing purposes. Period.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 04 COOKIES ── -->
+    <section class="sec" id="cookies">
+      <div class="sec-header">
+        <div class="sec-num">04</div>
+        <h2 class="sec-title">Cookies</h2>
+      </div>
+
+      <p>Cookies are small text files stored on your device by your browser. Our site uses only analytics cookies — we do not use advertising or tracking cookies.</p>
+
+      <div class="table-wrap" style="margin: 20px 0;">
+        <table>
+          <thead>
+            <tr><th>Cookie</th><th>Set by</th><th>Expiry</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:2px 6px;color:#c0cfe0">_ga</code></td>
+              <td>Google Analytics</td>
+              <td><span class="chip chip-gray">2 years</span></td>
+              <td>Distinguishes unique visitors across sessions</td>
+            </tr>
+            <tr>
+              <td><code style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:2px 6px;color:#c0cfe0">_ga_*</code></td>
+              <td>Google Analytics 4</td>
+              <td><span class="chip chip-gray">2 years</span></td>
+              <td>Maintains session state for the GA4 property</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>These are analytics cookies only. We do not use them for advertising or to track you across other websites.</p>
+
+      <p><strong>How to opt out:</strong> You can disable or delete these cookies at any time through your browser settings. You can also install the <a class="link" href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>, which prevents GA4 from collecting data about your visits to any site. Opting out will not affect your ability to use this website.</p>
+    </section>
+
+    <!-- ── 05 CHILDREN'S PRIVACY ── -->
+    <section class="sec" id="children">
+      <div class="sec-header">
+        <div class="sec-num">05</div>
+        <h2 class="sec-title">Children's Privacy</h2>
+      </div>
+
+      <div class="callout" style="margin-bottom: 22px;">
+        <div class="callout-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="callout-body">
+          <strong>This website is intended for parents and guardians of young athletes — not for children under 13.</strong>
+          <p>We do not knowingly collect personal information directly from children under the age of 13. Our contact and registration forms are designed for use by parents, guardians, and coaches acting on behalf of players.</p>
+        </div>
+      </div>
+
+      <p>The contact form fields that reference player age groups (e.g., U3–U4, U5–U6) are intended to be completed by the <strong>parent or guardian</strong> describing their child's age — not by the child themselves. We rely on this reasonable assumption, but we do not implement a technical age gate.</p>
+
+      <p>If you believe that a child under 13 has submitted personal information through this website without parental consent, please contact us immediately at <a class="link" href="/cdn-cgi/l/email-protection#5e2d2d3d1e2d273d283f703d3133"><span class="__cf_email__" data-cfemail="88fbfbebc8fbf1ebfee9a6ebe7e5">[email&#160;protected]</span></a> and we will take prompt steps to delete that information from our records.</p>
+
+      <p>This site is governed by and compliant with the Children's Online Privacy Protection Act (<strong>COPPA</strong>) to the extent applicable. We recommend consulting an attorney if you have specific concerns about COPPA applicability.</p>
+    </section>
+
+    <!-- ── 06 HOW WE USE INFORMATION ── -->
+    <section class="sec" id="how-we-use">
+      <div class="sec-header">
+        <div class="sec-num">06</div>
+        <h2 class="sec-title">How We Use Your Information</h2>
+      </div>
+
+      <p>We use the information we collect only for the following purposes:</p>
+
+      <ul class="data-list" style="margin: 16px 0;">
+        <li><strong>Respond to your inquiries:</strong> When you submit the contact form, we use your name, email, and message to get back to you with the information you requested.</li>
+        <li><strong>Send program notifications:</strong> If you join a waitlist, we'll email you when that program opens for registration. You can unsubscribe from any notification email at any time.</li>
+        <li><strong>Improve site experience:</strong> Aggregated analytics data helps us understand which programs are most popular, where users struggle, and how to make the site more useful for families.</li>
+        <li><strong>Comply with legal obligations:</strong> We may retain or disclose information as required by applicable law or valid legal process.</li>
+      </ul>
+
+      <p>We do <strong>not</strong> use your information for advertising, profiling, or any purpose beyond those listed above.</p>
+    </section>
+
+    <!-- ── 07 DATA RETENTION ── -->
+    <section class="sec" id="retention">
+      <div class="sec-header">
+        <div class="sec-num">07</div>
+        <h2 class="sec-title">Data Retention</h2>
+      </div>
+
+      <p>We keep your information only as long as necessary for the purpose it was collected.</p>
+
+      <div class="table-wrap" style="margin: 18px 0;">
+        <table>
+          <thead>
+            <tr><th>Data Type</th><th>Retention Period</th><th>Deletion Method</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Contact form submissions</td>
+              <td><span class="chip chip-orange">Up to 12 months</span></td>
+              <td>Periodic review and deletion from inbox</td>
+            </tr>
+            <tr>
+              <td>Waitlist / notify form submissions</td>
+              <td><span class="chip chip-orange">Until program opens + 3 months</span></td>
+              <td>Periodic review and deletion from inbox</td>
+            </tr>
+            <tr>
+              <td>Google Analytics event data</td>
+              <td><span class="chip chip-blue">14 months</span></td>
+              <td>Automatic expiry via GA4 property settings</td>
+            </tr>
+            <tr>
+              <td>Google Analytics user data (<code style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:2px 6px;color:#c0cfe0">_ga</code> cookies)</td>
+              <td><span class="chip chip-blue">14 months (auto)</span></td>
+              <td>Controlled by Google; deletable via browser or GA opt-out</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>To request deletion of your personal information before these periods expire, see the Contact section below.</p>
+    </section>
+
+    <!-- ── 08 YOUR RIGHTS ── -->
+    <section class="sec" id="rights">
+      <div class="sec-header">
+        <div class="sec-num">08</div>
+        <h2 class="sec-title">Your Rights</h2>
+      </div>
+
+      <p>Depending on where you live, you may have certain rights regarding your personal data. Regardless of your location, we honor the following requests:</p>
+
+      <ul class="data-list" style="margin: 16px 0 20px;">
+        <li><strong>Access:</strong> Request a copy of any personal information we hold about you.</li>
+        <li><strong>Correction:</strong> Ask us to correct inaccurate or incomplete information.</li>
+        <li><strong>Deletion:</strong> Request that we delete your personal information from our records.</li>
+        <li><strong>Opt-out of analytics:</strong> Use your browser settings or the Google Analytics Opt-out Add-on to stop GA4 from collecting your data.</li>
+        <li><strong>Do Not Sell or Share:</strong> We do not sell or share personal data for cross-context behavioral advertising. There is nothing to opt out of. If this changes, we will update this policy and add an opt-out mechanism.</li>
+      </ul>
+
+      <div class="callout">
+        <div class="callout-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+        <div class="callout-body">
+          <strong>California residents (CalOPPA / CCPA)</strong>
+          <p>If you are a California resident, you have the right to know what personal information we collect, the right to delete it, and the right to opt out of the "sale" of your personal information. We do not sell personal information. To exercise any right, contact us at the address below.</p>
+        </div>
+      </div>
+
+      <p style="margin-top: 18px;">To exercise any of these rights, email us at <a class="link" href="/cdn-cgi/l/email-protection#295a5a4a695a504a5f48074a4644"><span class="__cf_email__" data-cfemail="5d2e2e3e1d2e243e2b3c733e3230">[email&#160;protected]</span></a> with your name and request. We will respond within 30 days.</p>
+    </section>
+
+    <!-- ── 09 CONTACT ── -->
+    <section class="sec" id="contact">
+      <div class="sec-header">
+        <div class="sec-num">09</div>
+        <h2 class="sec-title">Contact Us</h2>
+      </div>
+
+      <p>If you have questions about this Privacy Policy, want to exercise your data rights, or believe a child's data has been submitted without consent, please reach out:</p>
+
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-title">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          Springfield Soccer Center
+        </div>
+        <ul class="data-list">
+          <li><strong>Website:</strong> <a class="link" href="https://www.springfieldsoccercenter.com" target="_blank" rel="noopener">www.springfieldsoccercenter.com</a></li>
+          <li><strong>General inquiries:</strong> <a class="link" href="/cdn-cgi/l/email-protection#f3808090b3808a908592dd909c9e"><span class="__cf_email__" data-cfemail="afdcdcccefdcd6ccd9ce81ccc0c2">[email&#160;protected]</span></a></li>
+          <li><strong>Privacy requests:</strong> <a class="link" href="/cdn-cgi/l/email-protection#d7a4a4b497a4aeb4a1b6f9b4b8ba"><span class="__cf_email__" data-cfemail="a9dadacae9dad0cadfc887cac6c4">[email&#160;protected]</span></a></li>
+          <li><strong>Location:</strong> Springfield, Virginia</li>
+          <li><strong>Contact page:</strong> <a class="link" href="index.html#register">springfieldsoccercenter.com/contact</a></li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="foot-brand">
+        <img class="foot-wordmark" src="assets/ssc-wordmark.png" alt="Springfield Soccer Center" />
+        <p>Elite year-round indoor soccer development. Connected to SYC Soccer.</p>
+      </div>
+      <div>
+        <h6>Navigate</h6>
+        <ul>
+          <li><a href="index.html#programs">Programs</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#rentals">Rentals</a></li>
+          <li><a href="index.html#register">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Legal</h6>
+        <ul>
+          <li><a href="privacy-policy.html" style="color: var(--accent);">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Springfield Soccer Center. All rights reserved.</span>
+      <span><a href="privacy-policy.html">Privacy Policy</a> · A SYC Soccer Development Environment</span>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Active TOC highlighting
+  const tocLinks = document.querySelectorAll('.toc-link[href^="#"]');
+  const sections = [...tocLinks].map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        const active = [...tocLinks].find(l => l.getAttribute('href') === '#' + entry.target.id);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
