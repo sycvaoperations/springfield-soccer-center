@@ -202,7 +202,7 @@
     },
     {
       "id": "midfield-mastery",
-      "title": "Midfield Mastery & Sports Training",
+      "title": "Midfield Mastery & Sports Performance",
       "cat": "Technical",
       "age": "U10-U14",
       "banner": "assets/banners/futsal.png",
@@ -238,11 +238,15 @@
           },
           {
             "label": "Time",
-            "value": "11:30 AM - 1:45 PM"
+            "value": "11:30 AM - 2:00 PM"
           },
           {
             "label": "Age Groups",
-            "value": "U10-U14"
+            "value": "U10-U15"
+          },
+          {
+            "label": "Coach",
+            "value": "Eric Otero"
           }
         ],
         "body": "This dynamic training program blends technical development and athletic performance training, helping players improve their first touch, decision-making, passing, and movement at game speed.\n\n## Why Midfield Mastery?\n\n- Develops first touch, ball control, and decision-making under pressure\n- Improves passing, combination play, and overall awareness in possession\n- Enhances speed, agility, coordination, and change of direction\n- Builds balance, body control, reaction speed, and explosiveness\n- Helps players execute technical skills more effectively at game speed"
