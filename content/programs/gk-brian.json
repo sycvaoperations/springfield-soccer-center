@@ -6,10 +6,10 @@
   "banner": "assets/banners/goalkeeper.png",
   "desc": "Elite goalkeeper training covering shot-stopping, positioning, distribution, and game scenarios-led by DC Power US National team coach Brian.",
   "meta": [
-    "8 weeks",
+    "6 weeks",
     "Mon, Wed",
-    "4:30 - 7:00 PM",
-    "7:00 - 9:30 PM"
+    "4:30 - 6:45 PM",
+    "7:00 - 9:15 PM"
   ],
   "status": "open",
   "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTc3MjQ5NnxuY3VrVGxjS0VMUWcxTFlwYitweUtJL2RuSnh0Q3BjYm4vYXhHVVI3MkJvPQ==&program_id=108165",
@@ -29,7 +29,7 @@
     "facts": [
       {
         "label": "Format",
-        "value": "8-Week GK Clinic"
+        "value": "6-Week GK Clinic"
       },
       {
         "label": "Dates",
@@ -41,11 +41,11 @@
       },
       {
         "label": "Time",
-        "value": "4:30 - 7:00 PM / 7:00 - 9:30 PM"
+        "value": "4:30 - 6:45 PM / 7:00 - 9:15 PM"
       },
       {
         "label": "Age Groups",
-        "value": "U10-U16"
+        "value": "U10-U17"
       },
       {
         "label": "Director",
