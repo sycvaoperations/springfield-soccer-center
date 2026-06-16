@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "content/programs/**"
+      - "content/programs.json"
       - "scripts/build-programs.ps1"
       - "scripts/generate-programs-seo.js"
       - ".github/workflows/build-programs.yml"
