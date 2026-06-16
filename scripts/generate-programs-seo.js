@@ -100,7 +100,7 @@ function buildSchema(p, desc) {
     '@type':    'Course',
     name:       p.title,
     description: desc || `${p.title} at ${ORG_NAME} in Springfield, VA.`,
-    url:        `${SITE_URL}/#programs`,
+    url:        `${SITE_URL}/#programs?id=${p.id}`,
     provider: {
       '@type': 'SportsOrganization',
       name:    ORG_NAME,
@@ -142,21 +142,29 @@ function buildSchema(p, desc) {
 // 4. Build one <article> per program
 // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function buildProgramArticle(p) {
-  // Prefer short desc; fall back to stripped details.body
-  const desc = p.desc || stripMarkdown(p.details && p.details.body) || '';
+  const shortDesc   = p.desc || '';
+  const bodyText    = stripMarkdown(p.details && p.details.body) || '';
+  const facts       = (p.details && p.details.facts) || [];
   const statusLabel = STATUS_LABELS[p.status] || p.status || '';
+
+  // Use richest available text for schema description
+  const schemaDesc = bodyText || shortDesc || `${p.title} at ${ORG_NAME} in Springfield, VA.`;
 
   return `
   <article class="ssc-program-index-item" data-program-id="${esc(p.id)}" data-status="${esc(p.status)}">
     <script type="application/ld+json">
-${buildSchema(p, desc)}
+${buildSchema(p, schemaDesc)}
     </script>
     <h3>${esc(p.title)}</h3>
     <p class="ssc-program-meta">\
 ${p.cat ? `<span class="ssc-program-category">${esc(p.cat)}</span>` : ''}\
 ${p.age ? ` &middot; <span class="ssc-program-age">Ages ${esc(p.age)}</span>` : ''}\
- &middot; <span class="ssc-program-status">${esc(statusLabel)}</span></p>${desc ? `
-    <p class="ssc-program-description">${esc(desc)}</p>` : ''}
+ &middot; <span class="ssc-program-status">${esc(statusLabel)}</span></p>${shortDesc ? `
+    <p class="ssc-program-description">${esc(shortDesc)}</p>` : ''}${bodyText ? `
+    <p class="ssc-program-detail">${esc(bodyText)}</p>` : ''}${facts.length ? `
+    <ul class="ssc-program-facts">
+${facts.map(f => `      <li><strong>${esc(f.label)}:</strong> ${esc(f.value)}</li>`).join('\n')}
+    </ul>` : ''}
   </article>`;
 }
 
