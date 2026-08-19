@@ -1,16 +1,18 @@
 {
-  "id": "footskills",
-  "title": "Footskills",
+  "id": "ball-mastery",
+  "title": "Advanced Ball Mastery & Technical Development",
   "cat": "Ball Mastery",
   "age": "U9-U14",
   "banner": "assets/banners/footskills.png",
-  "desc": "Master the fundamentals of control and dribbling through high-repetition, ball-mastery training built for real-game confidence.",
+  "desc": "An opportunity to sharpen skills outside of regular team training, with a focus on ball control, footskills, and 1v1s through a mix of fun and challenging activities.",
   "meta": [
     "8 Weeks",
-    "Once a Week"
+    "Friday Nights",
+    " 5:35 PM- 7:00 PM"
   ],
   "status": "open",
-  "visible": false,
+  "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==&program_id=116958",
+  "visible": true,
   "featured": true,
   "ageU3U4": false,
   "ageU5U6": false,
@@ -20,9 +22,28 @@
   "identDeveloping": true,
   "identCompetitive": true,
   "identSpecialized": false,
-  "order": 4,
+  "order": 2,
   "details": {
-    "tagline": "Master the Ball. Elevate Your Game.",
-    "body": "A foundational technical program for players who want to significantly improve their ball mastery and confidence.\n\n## What We Train\n\n- Ball mastery sequences and patterns\n- Dribbling moves and 1v1 technique\n- Turning, receiving, and body shape\n- Confidence in tight spaces"
+    "kicker": "Advanced Ball Mastery ",
+    "tagline": "More Touches. Sharper Skills.",
+    "facts": [
+      {
+        "label": "Format",
+        "value": "8 Week Technical Clinic"
+      },
+      {
+        "label": "Days",
+        "value": "Fri"
+      },
+      {
+        "label": "Time",
+        "value": "5:35 PM- 7:00 PM"
+      },
+      {
+        "label": "Age Groups",
+        "value": "U9 - U14"
+      }
+    ],
+    "body": "An advanced technical program for players looking to get additional touches outside of team training and sharpen the technical details that translate directly to game performance.\n\n## What We Train\n\n- High-repetition technical patterns \n- 1v1 Attacking & Change of Direction \n- Receiving & Ball Control\n- Game-Speed Dribbling\n- Creativity & Technical Execution\n"
   }
 }
