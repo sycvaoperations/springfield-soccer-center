@@ -1,6 +1,54 @@
 {
   "programs": [
     {
+      "id": "edge-training",
+      "title": "Edge Training",
+      "cat": "Pathway",
+      "age": "U13-U19",
+      "banner": "assets/banners/edge.png",
+      "desc": "An advanced training experience designed to elevate your game through elite soccer training, tactical insight, film review, and performance development—all in one focused session built to help players become stronger, smarter, and more game-ready.",
+      "meta": [
+        "14 Weeks",
+        "Mon & Wed",
+        "5:30 PM - 7:30 PM | 7:30 PM - 9:30 PM"
+      ],
+      "status": "open",
+      "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==&program_id=116935",
+      "visible": true,
+      "featured": false,
+      "ageU3U4": false,
+      "ageU5U6": false,
+      "ageU7U12": false,
+      "ageU13U19": true,
+      "identGettingStarted": false,
+      "identDeveloping": false,
+      "identCompetitive": true,
+      "identSpecialized": true,
+      "order": 1,
+      "details": {
+        "tagline": "Where Training Meets Your Next Level.",
+        "facts": [
+          {
+            "label": "Dates",
+            "value": "9/1 - 12/7"
+          },
+          {
+            "label": "Days",
+            "value": "Mon, Wed"
+          },
+          {
+            "label": "Time",
+            "value": "5:30 PM - 7:30 PM | 7:30 PM - 9:30 PM"
+          },
+          {
+            "label": "Age Groups",
+            "value": "U13-U19"
+          }
+        ],
+        "body": "High-impact, specialized training designed for U13-U19 players who are committed to reaching the next level. The EDGE Program combines elite soccer development, tactical insight, film review, and performance training to help dedicated players become stronger, smarter, and truly game-ready.\n\n## What to Expect\n- Elite technical skill development\n- Game-based decision-making and soccer IQ\n- Film review and tactical analysis\n- Speed, agility, strength, and conditioning\n- Performance-focused training designed to elevate on-field play\n"
+      }
+    },
+    {
       "id": "summer-camps",
       "title": "Summer Camps",
       "cat": "Camp",
@@ -355,7 +403,7 @@
             "value": "U10-U16"
           },
           {
-            "label": "Coach:",
+            "label": "Coach",
             "value": "Ahmad Sasso"
           }
         ],
