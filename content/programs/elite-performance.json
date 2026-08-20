@@ -1,0 +1,49 @@
+{
+  "id": "elite-performance",
+  "title": "Elite Performance Academy",
+  "cat": "Pro Development",
+  "age": "U9-U19",
+  "banner": "assets/banners/epa.png",
+  "desc": "Professional-level training led by Eric Otero — combining technical development, speed and strength, soccer IQ, injury prevention, and performance training to build complete athletes.",
+  "meta": [
+    "11 Weeks",
+    "Mon-Fri",
+    "5:00 AM - 8:00 AM | 12:00 - 5:00 PM"
+  ],
+  "status": "open",
+  "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==&program_id=117107",
+  "visible": true,
+  "featured": true,
+  "ageU3U4": false,
+  "ageU5U6": false,
+  "ageU7U12": true,
+  "ageU13U19": true,
+  "identGettingStarted": false,
+  "identDeveloping": true,
+  "identCompetitive": true,
+  "identSpecialized": true,
+  "order": 3,
+  "details": {
+    "kicker": "Elite Performance & Technical Academy (EPA)",
+    "tagline": "Train Like a Professional. Perform Like a Champion.",
+    "facts": [
+      {
+        "label": "Dates",
+        "value": "9/14-11/24"
+      },
+      {
+        "label": "Days",
+        "value": "Mon-Fri"
+      },
+      {
+        "label": "Age Groups",
+        "value": "U9-U19"
+      },
+      {
+        "label": "Coach",
+        "value": "Eric Otero"
+      }
+    ],
+    "body": "Professional-level athlete development led by Eric Otero (MLS NEXT HG Coach | Former Pro) — combining speed, strength, power, technical training, soccer-specific conditioning, and injury prevention with regular performance testing to maximize long-term development.\n\n## Specifics \n\n- Elite Adult Performance: 5-6 AM\n- Speed & Performance Training: 6-7 AM\n- Elite Player Performance: 7-8 AM\n- Recovery & Mobility Training: 12-1 PM\n- After School Youth Performance Training: 3:30-5 PM\n\nMembership options are available, with each class designed around a specific performance focus and athlete development goals."
+  }
+}
