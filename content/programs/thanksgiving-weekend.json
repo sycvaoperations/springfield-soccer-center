@@ -1,0 +1,48 @@
+{
+  "id": "thanksgiving-weekend",
+  "title": "Thanksgiving Break - Skills Camp",
+  "cat": "Camp",
+  "age": "U8-U14",
+  "desc": "Make the most of the Thanksgiving break with extra training, technical work, and competitive play designed to keep players sharp while they enjoy time away from their regular team schedule.",
+  "meta": [
+    "Individual Day Sign-Up or Full Camp",
+    "U8 - U11 | 8:30 AM - 11:30 AM",
+    "U12 - U14 | 12:00 PM - 3:00 PM"
+  ],
+  "status": "open",
+  "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==&program_id=117081",
+  "visible": true,
+  "featured": false,
+  "ageU3U4": false,
+  "ageU5U6": false,
+  "ageU7U12": true,
+  "ageU13U19": true,
+  "identGettingStarted": false,
+  "identDeveloping": true,
+  "identCompetitive": true,
+  "identSpecialized": false,
+  "order": 2,
+  "details": {
+    "kicker": "Thanksgiving Break - Skills Camp",
+    "bannerPlaceholder": "Fuel Your Game This Thanksgiving Break",
+    "facts": [
+      {
+        "label": "Dates",
+        "value": "11/25 - 11/29"
+      },
+      {
+        "label": "Days",
+        "value": "Wed, Fri, Sat, Sun"
+      },
+      {
+        "label": "Younger Age Group",
+        "value": "U8 - U11 | 8:30am-11:30am"
+      },
+      {
+        "label": "Older Age Group",
+        "value": "U12 - U14 | 12:00 PM - 3:00 PM"
+      }
+    ],
+    "body": "Thanksgiving break is a chance to get back to the details of the game. Players will work through technical training, individual skill work, and competitive activities designed to build quality repetitions and keep their game sharp between regular team sessions.\n\n## What to Expect \n\n- Sharpening key technical skills\n- Small-sided and activities that challenge players\n- Quick passing, movement, and play in tight spaces\n- Groups organized by age to create a competitive environment"
+  }
+}
