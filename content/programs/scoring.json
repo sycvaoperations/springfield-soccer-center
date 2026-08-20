@@ -1,17 +1,17 @@
 {
   "id": "scoring",
-  "title": "Shooting & Finishing Clinic + Performance Training",
+  "title": "Elite Technical Skills & Shooting Clinic",
   "cat": "Finishing",
-  "age": "U10-U16",
+  "age": "U19-U17",
   "banner": "assets/banners/scoring.png",
-  "desc": "Build strength, speed, and power while sharpening finishing, movement, and confidence in front of goal.",
+  "desc": "Fast-paced, competitive training focused on technical development, finishing, goal scoring, and attacking 1v1 and 2v2 situations — with game-realistic reps designed to sharpen decision-making and execution in the final third.",
   "meta": [
     "8 Weeks",
-    "Mon, Tues",
-    "7:00 - 8:15 PM"
+    "Sun",
+    "5:00 - 6:15 PM | 6:15 - 7:30 PM"
   ],
   "status": "open",
-  "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTg1NTYyNHxJOWkxZXBsN1gwaUYwaVR5NTYyVXMvelRyOGJESjl0dXhKVkpRMDl3OWJZPQ==&program_id=108195",
+  "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==&program_id=116968",
   "visible": true,
   "featured": false,
   "ageU3U4": false,
@@ -19,34 +19,30 @@
   "ageU7U12": true,
   "ageU13U19": true,
   "identGettingStarted": false,
-  "identDeveloping": true,
+  "identDeveloping": false,
   "identCompetitive": true,
   "identSpecialized": true,
   "order": 8,
   "details": {
-    "tagline": "Sharpen Skills. Build Strength. Score More",
+    "tagline": "Sharpen Your Technique. Finish with Confidence.",
     "facts": [
       {
         "label": "Dates",
-        "value": "7/6 - 8/25"
+        "value": "9/13 - 11/1"
       },
       {
         "label": "Days",
-        "value": "Mon, Tue"
+        "value": "Sun"
       },
       {
         "label": "Time",
-        "value": "7:00 - 8:15 PM"
+        "value": "5:00 - 6:15 PM | 6:15 - 7:30 PM"
       },
       {
         "label": "Age Groups",
-        "value": "U10-U16"
-      },
-      {
-        "label": "Coach",
-        "value": "Ahmad Sasso"
+        "value": "U9-U17"
       }
     ],
-    "body": "Strength and confidence change games. This program combines athletic performance training with elite finishing development to help players become stronger, faster, and more dangerous in front of goal.\n\n## What You Will Work On\n\n- Creativity and decision-making in front of goal\n- Off-ball movement and attacking runs\n- Composure and technique under pressure\n- Game realistic finishing repetitions and goal-scoring scenarios\n- Strength, speed, power, endurance, and mobility"
+    "body": "Technical quality and execution in the final third can decide matches. This clinic provides a fast-paced, competitive training environment focused on technical development, quick decision-making, and creating players who can consistently create and finish scoring opportunities.\n\n## What You Will Work On\n\n- Technical execution at game speed\n- Finishing and goal-scoring technique\n- Attacking 1v1 and 2v2 situations\n- Creating chances in the final third\n- Decision-making and execution under pressure"
   }
 }
