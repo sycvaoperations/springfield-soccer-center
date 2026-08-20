@@ -1,17 +1,17 @@
 {
-  "id": "attacking-1v1",
-  "title": "Building 1v1 Confidence & Speed Training",
-  "cat": "Dribbling",
+  "id": "footskills",
+  "title": "Thursday Night Foot-skills: Rec",
+  "cat": "Technical",
   "age": "U9-U15",
-  "banner": "assets/banners/attacking-1v1.png",
-  "desc": "Beat your defender, own the moment. Develop the moves, speed, and bravery to take players on and win.",
+  "banner": "assets/banners/thur-footskills.png",
+  "desc": "Own the ball, beat your defender. Develop the technique, creativity, and confidence to take players on and make an impact in game situations.",
   "meta": [
     "8 Weeks",
-    "Sat",
-    "10:00 - 11:30 PM / 11:30 -1:00 PM"
+    "Thur Evenings",
+    "5:35 PM- 7:00 PM"
   ],
   "status": "open",
-  "registrationUrl": "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc4NTg1NTYyNHxJOWkxZXBsN1gwaUYwaVR5NTYyVXMvelRyOGJESjl0dXhKVkpRMDl3OWJZPQ==&program_id=108392",
+  "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==&program_id=116950",
   "visible": true,
   "featured": false,
   "ageU3U4": false,
@@ -20,33 +20,29 @@
   "ageU13U19": true,
   "identGettingStarted": false,
   "identDeveloping": true,
-  "identCompetitive": true,
-  "identSpecialized": true,
+  "identCompetitive": false,
+  "identSpecialized": false,
   "order": 9,
   "details": {
-    "tagline": "Beat Your Defender. Every Time.",
+    "tagline": "More Touches. Better Technique. More Confidence on the Ball.",
     "facts": [
       {
         "label": "Dates",
-        "value": "7/11 - 8/29"
+        "value": "9/10 - 10/29"
       },
       {
         "label": "Days",
-        "value": "Sat"
+        "value": "Thur"
       },
       {
         "label": "Time",
-        "value": "10:00 - 11:30 PM / 11:30 - 1:00 PM"
+        "value": "5:35 PM- 7:00 PM"
       },
       {
         "label": "Age Groups",
-        "value": "U10-U15"
-      },
-      {
-        "label": "Coaches",
-        "value": "Sasso & Jaime"
+        "value": "U9-U15"
       }
     ],
-    "body": "The ability to beat a defender in a 1v1 is one of the most valuable skills in soccer. This clinic is entirely dedicated to that art.\n\n## Training Focus\n\n- Explosive first step and change of direction\n- Dribbling moves - cuts, step-overs, feints\n- Body shape and deception\n- Confidence under pressure\n- Game-realistic 1v1 scenarios\n"
+    "body": "Confidence on the ball starts with quality touches and strong technical habits. This clinic gives players the repetition and freedom to develop their footskills, creativity, and ability to make quick decisions with the ball.\n\n## Training Focus\n\n- Quick touches, tight-space dribbling, and changing direction at speed\n- Receiving and controlling the ball cleanly in different situations\n- Recognizing when to dribble, combine, or attack space under pressure\n- Carrying the ball with control while accelerating and changing direction\n"
   }
 }
