@@ -1,16 +1,18 @@
 {
-  "id": "pre-travel",
-  "title": "Pre-Travel",
-  "cat": "Pathway",
-  "age": "U5-U8",
-  "banner": "assets/banners/pre-travel.png",
-  "desc": "The bridge to competitive play. Build the foundation, confidence, and habits to step into travel soccer ready.",
+  "id": "sports-performance",
+  "title": "Sports Performance ",
+  "cat": "Foundations",
+  "age": "U9-U17",
+  "banner": "assets/banners/sports-performance-png.png",
+  "desc": "If your goal is to become faster, stronger, quicker, and more athletic, this is where the work gets done.",
   "meta": [
     "8 Weeks",
-    "Once a Week"
+    "Thur or Fri",
+    "7:05 PM - 8:25 PM"
   ],
   "status": "open",
-  "visible": false,
+  "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==",
+  "visible": true,
   "featured": false,
   "ageU3U4": false,
   "ageU5U6": true,
@@ -18,11 +20,29 @@
   "ageU13U19": false,
   "identGettingStarted": false,
   "identDeveloping": true,
-  "identCompetitive": false,
+  "identCompetitive": true,
   "identSpecialized": false,
-  "order": 5,
+  "order": 8,
   "details": {
-    "tagline": "From Recreation to Competition.",
-    "body": "The ideal stepping stone for players ready to make the transition from recreational to competitive soccer.\n\n## Key Focus Areas\n\n- Technical foundation - first touch, passing, dribbling\n- Introduction to team shape and positioning\n- Competitive mindset development\n- Small-sided game application"
+    "tagline": "Speed wins games. Strength creates advantages. Performance separates athletes.",
+    "facts": [
+      {
+        "label": "Dates",
+        "value": "9/10 - 10/30"
+      },
+      {
+        "label": "Days",
+        "value": "Thur or Fri"
+      },
+      {
+        "label": "Time",
+        "value": "7:05 PM - 8:25 PM"
+      },
+      {
+        "label": "Age Groups",
+        "value": "U9-U17"
+      }
+    ],
+    "body": "Our Thursday & Friday Night Sports Performance program is built for athletes who want more than just skill training. Through expert-led strength, speed, and agility development, athletes will enhance their physical performance and gain the tools needed to compete at the highest level.\n\n## Athletes will focus on\n\n- Explosive acceleration and speed\n- Power and strength development\n- Quickness and agility training\n- Athletic movement mechanics\n- Injury resilience and recovery\n"
   }
 }
