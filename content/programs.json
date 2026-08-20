@@ -329,7 +329,7 @@
       "status": "open",
       "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==&program_id=117075",
       "visible": true,
-      "featured": false,
+      "featured": true,
       "ageU3U4": false,
       "ageU5U6": true,
       "ageU7U12": true,
@@ -338,7 +338,7 @@
       "identDeveloping": true,
       "identCompetitive": true,
       "identSpecialized": false,
-      "order": 3,
+      "order": 4,
       "details": {
         "tagline": "No School = More Soccer",
         "body": "A structured day of training built around skill development, game play, and competition, giving players a chance to stay sharp and continue developing on their days off from school.\n\n## Camp Schedules\n\n- September 21, 2026 – Student Holiday\n- October 12, 2026 – School Planning Day\n- November 2, 2026 – Teacher Workday\n- November 3, 2026 – Election Day / School Planning Day\n\n## Who Is This For?\n\nPlayers of all levels from U8 through U15. Groups are organized by age and ability to maximize the training environment."
