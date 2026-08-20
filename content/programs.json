@@ -454,6 +454,54 @@
       }
     },
     {
+      "id": "scoring",
+      "title": "Elite Technical Skills & Shooting Clinic",
+      "cat": "Finishing",
+      "age": "U19-U17",
+      "banner": "assets/banners/scoring.png",
+      "desc": "Fast-paced, competitive training focused on technical development, finishing, goal scoring, and attacking 1v1 and 2v2 situations — with game-realistic reps designed to sharpen decision-making and execution in the final third.",
+      "meta": [
+        "8 Weeks",
+        "Sun",
+        "5:00 - 6:15 PM | 6:15 - 7:30 PM"
+      ],
+      "status": "open",
+      "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==&program_id=116968",
+      "visible": true,
+      "featured": false,
+      "ageU3U4": false,
+      "ageU5U6": false,
+      "ageU7U12": true,
+      "ageU13U19": true,
+      "identGettingStarted": false,
+      "identDeveloping": false,
+      "identCompetitive": true,
+      "identSpecialized": true,
+      "order": 7,
+      "details": {
+        "tagline": "Sharpen Your Technique. Finish with Confidence.",
+        "facts": [
+          {
+            "label": "Dates",
+            "value": "9/13 - 11/1"
+          },
+          {
+            "label": "Days",
+            "value": "Sun"
+          },
+          {
+            "label": "Time",
+            "value": "5:00 - 6:15 PM | 6:15 - 7:30 PM"
+          },
+          {
+            "label": "Age Groups",
+            "value": "U9-U17"
+          }
+        ],
+        "body": "Technical quality and execution in the final third can decide matches. This clinic provides a fast-paced, competitive training environment focused on technical development, quick decision-making, and creating players who can consistently create and finish scoring opportunities.\n\n## What You Will Work On\n\n- Technical execution at game speed\n- Finishing and goal-scoring technique\n- Attacking 1v1 and 2v2 situations\n- Creating chances in the final third\n- Decision-making and execution under pressure"
+      }
+    },
+    {
       "id": "sports-performance",
       "title": "Sports Performance ",
       "cat": "Foundations",
@@ -499,54 +547,6 @@
           }
         ],
         "body": "Our Thursday & Friday Night Sports Performance program is built for athletes who want more than just skill training. Through expert-led strength, speed, and agility development, athletes will enhance their physical performance and gain the tools needed to compete at the highest level.\n\n## Athletes will focus on\n\n- Explosive acceleration and speed\n- Power and strength development\n- Quickness and agility training\n- Athletic movement mechanics\n- Injury resilience and recovery\n"
-      }
-    },
-    {
-      "id": "scoring",
-      "title": "Elite Technical Skills & Shooting Clinic",
-      "cat": "Finishing",
-      "age": "U19-U17",
-      "banner": "assets/banners/scoring.png",
-      "desc": "Fast-paced, competitive training focused on technical development, finishing, goal scoring, and attacking 1v1 and 2v2 situations — with game-realistic reps designed to sharpen decision-making and execution in the final third.",
-      "meta": [
-        "8 Weeks",
-        "Sun",
-        "5:00 - 6:15 PM | 6:15 - 7:30 PM"
-      ],
-      "status": "open",
-      "registrationUrl": "https://app.playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS04MDktMTc5MjM0MDUwN3xYMDFNVzZrbko3SXUvQm1OZndORUlSNHhkVVFNR013RkEwQUcrMmN6c3g0PQ==&program_id=116968",
-      "visible": true,
-      "featured": false,
-      "ageU3U4": false,
-      "ageU5U6": false,
-      "ageU7U12": true,
-      "ageU13U19": true,
-      "identGettingStarted": false,
-      "identDeveloping": false,
-      "identCompetitive": true,
-      "identSpecialized": true,
-      "order": 8,
-      "details": {
-        "tagline": "Sharpen Your Technique. Finish with Confidence.",
-        "facts": [
-          {
-            "label": "Dates",
-            "value": "9/13 - 11/1"
-          },
-          {
-            "label": "Days",
-            "value": "Sun"
-          },
-          {
-            "label": "Time",
-            "value": "5:00 - 6:15 PM | 6:15 - 7:30 PM"
-          },
-          {
-            "label": "Age Groups",
-            "value": "U9-U17"
-          }
-        ],
-        "body": "Technical quality and execution in the final third can decide matches. This clinic provides a fast-paced, competitive training environment focused on technical development, quick decision-making, and creating players who can consistently create and finish scoring opportunities.\n\n## What You Will Work On\n\n- Technical execution at game speed\n- Finishing and goal-scoring technique\n- Attacking 1v1 and 2v2 situations\n- Creating chances in the final third\n- Decision-making and execution under pressure"
       }
     },
     {
